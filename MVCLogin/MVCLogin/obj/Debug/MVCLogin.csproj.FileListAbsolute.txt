@@ -1,0 +1,113 @@
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\ApplicationInsights.config
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\csc.exe
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\System.Collections.Immutable.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\vbc.exe
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\VBCSCompiler.exe
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\roslyn\VBCSCompiler.exe.config
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\MVCLogin.dll.config
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\MVCLogin.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\MVCLogin.pdb
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\EntityFramework.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.Web.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.WindowsServer.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.ApplicationInsights.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.Web.Infrastructure.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Helpers.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Mvc.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Razor.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Deployment.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Razor.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\EntityFramework.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.Web.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.AI.WindowsServer.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.ApplicationInsights.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Razor.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Deployment.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Razor.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Helpers.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\bin\System.Web.Mvc.xml
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.dll
+c:\users\zyzu\documents\visual studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.pdb
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CoreCompileInputs.cache
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\bin\en\MVCLogin.resources.dll
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.Resources.HomeTexts.resources
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.Resources.HomeTexts.en.resources
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.GenerateResource.Cache
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\en\MVCLogin.resources.dll
+C:\Users\zyzu\Documents\Visual Studio 2015\Projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csprojResolveAssemblyReference.cache
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\ApplicationInsights.config
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\csc.exe
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\vbc.exe
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\VBCSCompiler.exe
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\MVCLogin.dll.config
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\MVCLogin.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\MVCLogin.pdb
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\en\MVCLogin.resources.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\EntityFramework.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.Web.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.ApplicationInsights.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Helpers.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Mvc.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Razor.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Deployment.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Razor.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\EntityFramework.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\EntityFramework.SqlServer.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.Web.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.ApplicationInsights.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Razor.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Deployment.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Webpages.Razor.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Helpers.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\bin\System.Web.Mvc.xml
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csprojAssemblyReference.cache
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.Resources.HomeTexts.resources
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.Resources.HomeTexts.en.resources
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.GenerateResource.cache
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CoreCompileInputs.cache
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\en\MVCLogin.resources.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.csproj.CopyComplete
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.dll
+C:\Users\przem\Documents\My-projects\MVCLogin\MVCLogin\obj\Debug\MVCLogin.pdb

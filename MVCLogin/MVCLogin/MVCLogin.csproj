@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F631A3F7-475A-42F0-A89C-19A20276A907}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MVCLogin</RootNamespace>
+    <AssemblyName>MVCLogin</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Web.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Deployment">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Webpages.Razor">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Webpages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers">
+      <HintPath>..\packages\Microsoft.AspNet.Webpages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\bootstrapicon.png" />
+    <Content Include="Content\img\cell.png" />
+    <Content Include="Content\img\csharpicon.png" />
+    <Content Include="Content\img\cssicon.png" />
+    <Content Include="Content\img\gimpicon.png" />
+    <Content Include="Content\img\giticon.png" />
+    <Content Include="Content\img\htmlicon.png" />
+    <Content Include="Content\img\mail.png" />
+    <Content Include="Content\img\mvcicon.png" />
+    <Content Include="Content\img\pl.png" />
+    <Content Include="Content\img\projects\euromax.jpg" />
+    <Content Include="Content\img\projects\insuranceapp.jpg" />
+    <Content Include="Content\img\projects\letscss.png" />
+    <Content Include="Content\img\projects\progress.jpg" />
+    <Content Include="Content\img\projects\szlips.jpg" />
+    <Content Include="Content\img\skype.png" />
+    <Content Include="Content\img\sqlicon.png" />
+    <Content Include="Content\img\uk.png" />
+    <Content Include="Content\img\viber.png" />
+    <Content Include="Content\img\visualicon.png" />
+    <Content Include="Content\img\whats.png" />
+    <Content Include="Content\img\wpficon.png" />
+    <Content Include="Content\img\zdjecie\zdjecie.jpg" />
+    <Content Include="Content\projects\euromax\-\index.html" />
+    <Content Include="Content\projects\euromax\ajax.txt" />
+    <Content Include="Content\projects\euromax\dwa.html" />
+    <Content Include="Content\projects\euromax\euromax.html" />
+    <Content Include="Content\projects\euromax\fancybox\blank.gif" />
+    <Content Include="Content\projects\euromax\fancybox\fancybox-x.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancybox-y.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancybox.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_close.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_loading.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_nav_left.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_nav_right.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_e.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_n.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_ne.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_nw.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_s.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_se.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_sw.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_shadow_w.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_title_left.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_title_main.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_title_over.png" />
+    <Content Include="Content\projects\euromax\fancybox\fancy_title_right.png" />
+    <Content Include="Content\projects\euromax\fancybox\jquery.easing-1.3.pack.js" />
+    <Content Include="Content\projects\euromax\fancybox\jquery.fancybox-1.3.4.css" />
+    <Content Include="Content\projects\euromax\fancybox\jquery.fancybox-1.3.4.js" />
+    <Content Include="Content\projects\euromax\fancybox\jquery.fancybox-1.3.4.pack.js" />
+    <Content Include="Content\projects\euromax\fancybox\jquery.mousewheel-3.0.4.pack.js" />
+    <Content Include="Content\projects\euromax\fancybox\rez.JPG" />
+    <Content Include="Content\projects\euromax\firma.html" />
+    <Content Include="Content\projects\euromax\galeria.html" />
+    <Content Include="Content\projects\euromax\google4d4013c2fa4043b5.html" />
+    <Content Include="Content\projects\euromax\grafika\firma.jpg" />
+    <Content Include="Content\projects\euromax\grafika\galeria.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\caly.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\dom.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\dom1.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\domrz.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\caly.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\dom.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\dom1.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\domrz.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\part.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\plan1.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\plan2.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\pod.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\mini\sytuacja.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\part.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\plan1.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\plan2.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\pod.jpg" />
+    <Content Include="Content\projects\euromax\grafika\jr\rez1.JPG" />
+    <Content Include="Content\projects\euromax\grafika\jr\sytuacja.jpg" />
+    <Content Include="Content\projects\euromax\grafika\kontakt.jpg" />
+    <Content Include="Content\projects\euromax\grafika\lokalizacja.jpg" />
+    <Content Include="Content\projects\euromax\grafika\mapa\mapa.jpg" />
+    <Content Include="Content\projects\euromax\grafika\mapa\mapa.png" />
+    <Content Include="Content\projects\euromax\grafika\mapa\mapa_mala.png" />
+    <Content Include="Content\projects\euromax\grafika\mini\rez.JPG" />
+    <Content Include="Content\projects\euromax\grafika\oferta.jpg" />
+    <Content Include="Content\projects\euromax\grafika\rez.JPG" />
+    <Content Include="Content\projects\euromax\grafika\robocza.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\iipietro.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\ipietro.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\mini\iipietro.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\mini\ipietro.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\mini\parter.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\mini\poddasze.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\mini\rzut.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\mini\sytuacja.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\parter.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\poddasze.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\rzut.jpg" />
+    <Content Include="Content\projects\euromax\grafika\wr\sytuacja.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zast\dom.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zast\dom1.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zast\dom1_min.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zast\domrz.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zast\domrz_min.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zast\dom_min.jpg" />
+    <Content Include="Content\projects\euromax\grafika\zmianaaaaaaaaa.jpg" />
+    <Content Include="Content\projects\euromax\index.html" />
+    <Content Include="Content\projects\euromax\jeden.html" />
+    <Content Include="Content\projects\euromax\jednorodzinne.html" />
+    <Content Include="Content\projects\euromax\jquery-1.4.3.min.js" />
+    <Content Include="Content\projects\euromax\lok.html" />
+    <Content Include="Content\projects\euromax\mapa-duza.jpg" />
+    <Content Include="Content\projects\euromax\New Text Document.txt" />
+    <Content Include="Content\projects\euromax\oferta.html" />
+    <Content Include="Content\projects\euromax\osiedle.html" />
+    <Content Include="Content\projects\euromax\rez.JPG" />
+    <Content Include="Content\projects\euromax\robots.txt" />
+    <Content Include="Content\projects\euromax\robots.txt.txt" />
+    <Content Include="Content\projects\euromax\sitemap.xml" />
+    <Content Include="Content\projects\euromax\slonecznadolina.html" />
+    <Content Include="Content\projects\euromax\style.css" />
+    <Content Include="Content\projects\euromax\wielorodzinne.html" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0038.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0039.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0040.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0041.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0042.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0043.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\IMG_0044.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0038.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0039.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0040.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0041.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0042.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0043.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\1\mini\IMG_0044.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_0057.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_0058.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_0059.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_0060.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_0061.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_0062.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_194.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_195.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_196.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_197.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_198.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\IMG_199.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_0057.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_0058.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_0059.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_0060.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_0061.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_0062.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_194.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_195.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_196.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_197.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_198.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\2\mini\IMG_199.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\dom1.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\dom2.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\dom3.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\dom4.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\dom1.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\dom2.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\dom3.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\dom4.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\pole1.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\pole2.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\pole3.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\pole4.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\pole5.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\ulica1.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\mini\ulica2.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\pole1.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\pole2.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\pole3.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\pole4.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\pole5.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\ulica1.JPG" />
+    <Content Include="Content\projects\euromax\zdjecia\ulica2.JPG" />
+    <Content Include="Content\projects\insurance\InsuranceApp.exe" />
+    <Content Include="Content\projects\letscss\index.html" />
+    <Content Include="Content\projects\letscss\style.css" />
+    <Content Include="Content\projects\szlips\carousel.css" />
+    <Content Include="Content\projects\szlips\css\bootstrap-responsive.min.css" />
+    <Content Include="Content\projects\szlips\css\bootstrap-theme.css" />
+    <Content Include="Content\projects\szlips\css\bootstrap-theme.min.css" />
+    <Content Include="Content\projects\szlips\css\bootstrap.css" />
+    <Content Include="Content\projects\szlips\css\bootstrap.min.css" />
+    <Content Include="Content\projects\szlips\css\carousel.css" />
+    <Content Include="Content\projects\szlips\css\common.css" />
+    <Content Include="Content\projects\szlips\css\demo.css" />
+    <Content Include="Content\projects\szlips\css\main.css" />
+    <Content Include="Content\projects\szlips\css\style.css" />
+    <Content Include="Content\projects\szlips\css\style2.css" />
+    <Content Include="Content\projects\szlips\effects\fill\bullet.png" />
+    <Content Include="Content\projects\szlips\effects\fill\js-image-slider.css" />
+    <Content Include="Content\projects\szlips\effects\fill\js-image-slider.js" />
+    <Content Include="Content\projects\szlips\effects\fill\loading.gif" />
+    <Content Include="Content\projects\szlips\effects\gs.css" />
+    <Content Include="Content\projects\szlips\finanse.html" />
+    <Content Include="Content\projects\szlips\google1c81f02ab94dc754.html" />
+    <Content Include="Content\projects\szlips\images\bg.jpg" />
+    <Content Include="Content\projects\szlips\images\ImageAttribution.txt" />
+    <Content Include="Content\projects\szlips\images\light.png" />
+    <Content Include="Content\projects\szlips\images\loading.gif" />
+    <Content Include="Content\projects\szlips\images\medium\1.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\10.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\11.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\12.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\13.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\14.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\15.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\16.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\17.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\18.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\19.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\2.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\20.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\21.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\22.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\23.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\24.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\25.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\26.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\27.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\28.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\29.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\3.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\30.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\31.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\32.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\33.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\34.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\35.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\36.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\37.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\38.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\39.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\4.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\40.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\41.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\42.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\43.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\44.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\45.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\46.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\47.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\48.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\49.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\5.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\50.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\51.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\52.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\53.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\54.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\6.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\7.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\8.jpg" />
+    <Content Include="Content\projects\szlips\images\medium\9.jpg" />
+    <Content Include="Content\projects\szlips\img\1.jpg" />
+    <Content Include="Content\projects\szlips\img\11073418_l.jpg" />
+    <Content Include="Content\projects\szlips\img\2.jpg" />
+    <Content Include="Content\projects\szlips\img\2.png" />
+    <Content Include="Content\projects\szlips\img\223.jpg" />
+    <Content Include="Content\projects\szlips\img\23232.jpg" />
+    <Content Include="Content\projects\szlips\img\24913366_l.jpg" />
+    <Content Include="Content\projects\szlips\img\26010685_l.jpg" />
+    <Content Include="Content\projects\szlips\img\3.jpg" />
+    <Content Include="Content\projects\szlips\img\4.jpg" />
+    <Content Include="Content\projects\szlips\img\bg.jpg" />
+    <Content Include="Content\projects\szlips\img\bg1.png" />
+    <Content Include="Content\projects\szlips\img\bgg.png" />
+    <Content Include="Content\projects\szlips\img\br.png" />
+    <Content Include="Content\projects\szlips\img\d.png" />
+    <Content Include="Content\projects\szlips\img\d1.png" />
+    <Content Include="Content\projects\szlips\img\d2.png" />
+    <Content Include="Content\projects\szlips\img\d3.png" />
+    <Content Include="Content\projects\szlips\img\d4.png" />
+    <Content Include="Content\projects\szlips\img\d5.png" />
+    <Content Include="Content\projects\szlips\img\f.png" />
+    <Content Include="Content\projects\szlips\img\fb.png" />
+    <Content Include="Content\projects\szlips\img\finanse.jpg" />
+    <Content Include="Content\projects\szlips\img\foot.png" />
+    <Content Include="Content\projects\szlips\img\gp.png" />
+    <Content Include="Content\projects\szlips\img\home.png" />
+    <Content Include="Content\projects\szlips\img\ico.png" />
+    <Content Include="Content\projects\szlips\img\icons\google-maps.png" />
+    <Content Include="Content\projects\szlips\img\icons\man.png" />
+    <Content Include="Content\projects\szlips\img\icons\phone.png" />
+    <Content Include="Content\projects\szlips\img\k.png" />
+    <Content Include="Content\projects\szlips\img\komunikacja.jpg" />
+    <Content Include="Content\projects\szlips\img\logo.png" />
+    <Content Include="Content\projects\szlips\img\logo1-.png" />
+    <Content Include="Content\projects\szlips\img\logo1.png" />
+    <Content Include="Content\projects\szlips\img\logo3331.png" />
+    <Content Include="Content\projects\szlips\img\m.jpg" />
+    <Content Include="Content\projects\szlips\img\m.png" />
+    <Content Include="Content\projects\szlips\img\m1.png" />
+    <Content Include="Content\projects\szlips\img\m3.png" />
+    <Content Include="Content\projects\szlips\img\majatek.jpg" />
+    <Content Include="Content\projects\szlips\img\New Bitmap Image %282%29.bmp" />
+    <Content Include="Content\projects\szlips\img\pr.png" />
+    <Content Include="Content\projects\szlips\img\rate.png" />
+    <Content Include="Content\projects\szlips\img\rz.png" />
+    <Content Include="Content\projects\szlips\img\tap.png" />
+    <Content Include="Content\projects\szlips\img\tow\compensa.png" />
+    <Content Include="Content\projects\szlips\img\tow\generali.png" />
+    <Content Include="Content\projects\szlips\img\tow\gothaer.png" />
+    <Content Include="Content\projects\szlips\img\tow\hdi.png" />
+    <Content Include="Content\projects\szlips\img\tow\hestia.jpg" />
+    <Content Include="Content\projects\szlips\img\tow\hestia.png" />
+    <Content Include="Content\projects\szlips\img\tow\k.png" />
+    <Content Include="Content\projects\szlips\img\tow\pzu.png" />
+    <Content Include="Content\projects\szlips\img\tow\uniqa.png" />
+    <Content Include="Content\projects\szlips\img\tow\warta.png" />
+    <Content Include="Content\projects\szlips\img\z.png" />
+    <Content Include="Content\projects\szlips\img\zycie.jpg" />
+    <Content Include="Content\projects\szlips\index.html" />
+    <Content Include="Content\projects\szlips\js\bootstrap.js" />
+    <Content Include="Content\projects\szlips\js\bootstrap.min.js" />
+    <Content Include="Content\projects\szlips\js\es5-sham.min.js" />
+    <Content Include="Content\projects\szlips\js\es5-shim.min.js" />
+    <Content Include="Content\projects\szlips\js\jquery.geolocation.edit.js" />
+    <Content Include="Content\projects\szlips\js\jquery.geolocation.edit.min.js" />
+    <Content Include="Content\projects\szlips\js\jquery.gridrotator.js" />
+    <Content Include="Content\projects\szlips\js\map.js" />
+    <Content Include="Content\projects\szlips\js\modernizr.custom.26633.js" />
+    <Content Include="Content\projects\szlips\js\multi_step_form.js" />
+    <Content Include="Content\projects\szlips\js\WhatsNearby.js" />
+    <Content Include="Content\projects\szlips\komunikacja.html" />
+    <Content Include="Content\projects\szlips\logo.jpg" />
+    <Content Include="Content\projects\szlips\majatek.html" />
+    <Content Include="Content\projects\szlips\pls.png" />
+    <Content Include="Content\projects\szlips\robots.txt" />
+    <Content Include="Content\projects\szlips\robots.txt.txt" />
+    <Content Include="Content\projects\szlips\sitemap.xml" />
+    <Content Include="Content\projects\szlips\style.css" />
+    <Content Include="Content\projects\szlips\zycie.html" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\styles.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\skype.svg" />
+    <Content Include="fonts\viber.svg" />
+    <Content Include="fonts\whatsapp-square.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Models\LoginDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDataModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\LoginDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDataModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\projects\euromax\.htaccess" />
+    <Content Include="Content\projects\euromax\New Dokument programu Microsoft Office Word.docx" />
+    <Content Include="Content\projects\euromax\prospekt.pdf" />
+    <Content Include="Content\projects\euromax\prospekt.pptx" />
+    <EntityDeploy Include="Models\LoginDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoginDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\LoginDataModel.edmx.diagram">
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\projects\szlips\css\bootstrap-theme.css.map" />
+    <Content Include="Content\projects\szlips\css\bootstrap.css.map" />
+    <Content Include="Content\projects\szlips\dok\darowizna.pdf" />
+    <Content Include="Content\projects\szlips\dok\oferta.pdf" />
+    <Content Include="Content\projects\szlips\dok\wykaz.xls" />
+    <Content Include="Content\projects\szlips\dok\wypowiedzenie.pdf" />
+    <Content Include="Content\projects\szlips\images\.DS_Store" />
+    <Content Include="Content\projects\szlips\images\medium\.DS_Store" />
+    <Content Include="Content\projects\szlips\images\medium\Thumbs.db" />
+    <Content Include="Content\projects\szlips\images\Thumbs.db" />
+    <Content Include="Content\projects\szlips\js\geolocation.edit.jquery.json" />
+    <Content Include="Content\projects\szlips\js\LICENCE-MIT" />
+    <Content Include="Content\projects\szlips\js\README.md" />
+    <Content Include="Content\projects\euromax\-\Bez nazwy.xcf" />
+    <Content Include="Content\projects\euromax\-\robocza.xcf" />
+    <Content Include="Content\projects\euromax\-\robocze napisy.xcf" />
+    <Content Include="Content\projects\euromax\grafika\oferta.jpg.map" />
+    <Content Include="Content\projects\euromax\grafika\prawa.map" />
+    <Content Include="Content\projects\euromax\grafika\prospekt.pptx" />
+    <Content Include="Content\dokumenty\CV_PRZEMYSLAW_SZYMCZUK_ENG.pdf" />
+    <Content Include="Content\dokumenty\CV_PRZEMYSLAW_SZYMCZUK_PL.pdf" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\nazwa.pubxml" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <None Include="scripts\jquery.validate-vsdoc.js" />
+    <Content Include="scripts\jquery.barfiller.js" />
+    <Content Include="scripts\jquery.validate.js" />
+    <Content Include="scripts\jquery.validate.min.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Home\AfterLogin.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\User.cs">
+      <DependentUpon>LoginDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\HomeTexts.Designer.cs" />
+    <Compile Include="Resources\HomeTexts.en.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Login.cshtml" />
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Home\MyProjects.cshtml" />
+    <Content Include="Views\Home\AboutMe.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Views\Account\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\HomeTexts.en.resx" />
+    <EmbeddedResource Include="Resources\HomeTexts.resx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50292</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50292/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

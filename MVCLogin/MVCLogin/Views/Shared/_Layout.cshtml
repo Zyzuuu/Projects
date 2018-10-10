@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+    <html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site with my cv, and other information about me. Im trying to be a programmer and this site should show my skills at least that was the idea.">
+        <meta name="keywords" content="programmer, beginer programmer, C# programmer, .NET programmer, HTML, CSS3, BOOTSTRAP, WPF">
+        <meta name="author" content="Przemysław Szymczuk">
+        <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+        <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/styles.css" rel="stylesheet" />
+        <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web" rel="stylesheet">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+
+        <title>@ViewBag.Title - Przemysław Szymczuk</title>
+
+    </head>
+    <body>
+
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark tit navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggler" style="margin-bottom:50px" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon "></span>
+                    </button>
+                    <h2 class="mypersonalh2">
+                        PRZEMYSŁAW SZYMCZUK
+                    </h2>
+                </div>
+
+
+
+
+
+
+                @if (Session["UserName"] != null)
+            {
+
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                    <div class="d-flex bd-highlight mb-3">
+
+
+
+                        <div class="p-2 bd-highlight ml-auto">
+                            <ul class="navbar-nav">
+
+                                <li class="nav-right">
+                                    <button type="button" class="btn btn-primary btn-sm btn-menu-space tit" onclick="location.href='@Url.Action("AfterLogin", "Home")'">@MVCLogin.Resources.HomeTexts.TECHNOLOGIES</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-primary btn-sm btn-menu-space tit" onclick="location.href='@Url.Action("MyProjects", "Home")'">@MVCLogin.Resources.HomeTexts.PROJECTS</button>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-primary btn-sm btn-menu-space tit" onclick="location.href='@Url.Action("AboutMe", "Home")'">@MVCLogin.Resources.HomeTexts.ME</button>
+
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-primary btn-sm btn-menu-space tit" onclick="location.href='@Url.Action("Contact", "Home")'">@MVCLogin.Resources.HomeTexts.CONTACT</button>
+
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-primary btn-sm btn-menu-space tit" onclick="window.open('https://github.com/Zyzuuu')">@MVCLogin.Resources.HomeTexts.GITHUB</button>
+
+                                </li>
+                                <li class="nav-item">
+                                    <div class="dropdown d-inline float-left">
+                                        <button class="btn btn-primary dropdown-toggle btn-sm btn-menu-space" type="button" data-toggle="dropdown">
+                                            @MVCLogin.Resources.HomeTexts.DOWNLOAD
+                                        </button>
+
+                                        <ul class="dropdown-menu" role="menu" area-labelledby="dLabel">
+
+                                            <li><a href="~/Content/dokumenty/CV_PRZEMYSLAW_SZYMCZUK_PL.pdf" target="_blank">Ciriculum Vitae PL</a></li>
+                                            <li><a href="~/Content/dokumenty/CV_PRZEMYSLAW_SZYMCZUK_ENG.pdf" target="_blank">Ciriculum Vitae ENG</a></li>
+
+                                            <li><a href="~/Content/projects/insurance/InsuranceApp.exe">Program C#</a></li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <button type="button" class="btn btn-default btn-sm btn-menu-space tit" onclick="location.href='@Url.Action("LogOut", "Home")'">
+                                        <span class="glyphicon glyphicon-log-out "></span>
+                                        @MVCLogin.Resources.HomeTexts.LOGOUT
+                                    </button>
+                                <li>
+
+                                <li><img src="~/Content/img/uk.png" title="English language " width="25px" height="15px" style="margin-left:15px; margin-right: auto" onclick="location.href='@Url.Action(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)'">
+                                <li>
+                                <li><img src="~/Content/img/pl.png" title="język polski" width="25px" height="15px" style="margin-left: 15px; margin-right: auto" onclick="location.href='@Url.Action(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "pl" }, null)'"> /></li>
+                                </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+        }
+                </div>
+        </nav>
+        
+
+        <div class="container body-content">
+            <hr />
+
+            @RenderBody()
+            <hr />
+
+        </div>
+
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+
+      
+        <script>
+            window.addEventListener("load", function () {
+                window.cookieconsent.initialise({
+                    "palette": {
+                        "popup": {
+                            "background": "#000000",
+                            "text": "#ffffff"
+                        },
+                        "button": {
+                            "background": "#ffffff",
+                            "text": "#000000"
+                        }
+                    },
+                    "content": {
+                        "message": "@MVCLogin.Resources.HomeTexts.COOKIE",
+                         "dismiss": "@MVCLogin.Resources.HomeTexts.GOTIT",
+                         "link": ""
+                    }
+                })
+            });
+        </script>
+
+    </body>
+</html>

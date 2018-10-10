@@ -1,0 +1,14 @@
+<img src="prawa.jpg" width="357" height="500" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:zyzuuu -->
+<area shape="rect" coords="74,159,217,185" href="start.html" />
+<area shape="rect" coords="74,210,217,236" href="oferta.html" />
+<area shape="rect" coords="74,257,217,283" href="cennik.html" />
+<area shape="rect" coords="74,307,217,333" href="lok.html" />
+<area shape="rect" coords="74,356,217,382" href="kontakt.html" />
+</map>

@@ -1,0 +1,476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTUALYDISPLAYSITE" xml:space="preserve">
+    <value>AKTUALNIE WYŚWIETLANA STRONA</value>
+  </data>
+  <data name="ADRESS" xml:space="preserve">
+    <value>Adres: </value>
+  </data>
+  <data name="APPTEXT" xml:space="preserve">
+    <value>Mój pierwszy program napisany w C# przy użyciu frameworka .NET WPF.
+                            Jest to program do tworzenia oferty ubezpieczeniowej w postaci gotowego maila.
+                            Pomysł pojawił mi się jeszcze w chwili kiedy pracowałem w ubezpieczeniach.
+                            Realizację pomysłu zacząłem w chwili, gdy nauczyłem się C#.
+                            Czas napisania programu to ok 2 tygodni, gdzie wcześniej nigdy nie miałem
+                            styczności z WPF'em. Pomocny był StackOverflow.</value>
+  </data>
+  <data name="ASPTEXT" xml:space="preserve">
+    <value>Idąc dalej w las postanowiłem zapoznać się trochę z technologią ASP.NET MVC.
+                            Moją motywacją było uzupełnienie technologii .NET o kolejny framework i chęć poznania czegoś, o czym tak wiele się mówi i pisze w internecie.
+                            Swoją przygodę zacząłem od stworzenia okna logowania, aż po widoki poszczególnych stron.
+                            Z uwagi na fakt, iż z HTML, CSS oraz Bootstrapem miałem już wiele razy do czynienia i wiem co nie co na ten temat,
+                            to muszę przyznać, że MVC zrobiło na mnie duże wrażenie, pomimo, że tylko "liznąłem" tej technologii.
+                            Jak narazie stronę zbudowałem na podstawie informacji znalezionych w internecie, a przede wszystkim na StackOverflow.
+                            Teraz przyszła pora na uzupełnienie wiedzy ksiązką tudzież dobrym kursem.</value>
+  </data>
+  <data name="BASICS" xml:space="preserve">
+    <value>PODSTAWY</value>
+  </data>
+  <data name="BIRTHDATE" xml:space="preserve">
+    <value>Data ur.</value>
+  </data>
+  <data name="BOOTTEXT" xml:space="preserve">
+    <value>Powiedzieć, że znam bootstrapa od deski do deski to trochę zbyt wiele, natomiast radzę sobie z nim,
+                            wiem z czym należy go jeść, aby był jak najlepszy, znam zasady odpowiedzialne za responsywność stron,
+                            rozmieszczenie, a także inne podstawowe funkcje tego Frameworka.
+                            Jak z powyższymi po prostu brakuje mi doświadczenia, ze względu na to iż bootstrapa używałem tylko w dwóch projektach.
+                            Nie mogę jednak powiedzieć, że jestem zielony w tym temacie, bo nie jestem.
+                            W końcu na każde pytanie da się znaleźć odpowiedź i tak też czynię kiedy pojawia się jakiś problem do rozwiązania.</value>
+  </data>
+  <data name="BROKER" xml:space="preserve">
+    <value>Kancelaria brokerska - "Szlips"</value>
+  </data>
+  <data name="COMPANY" xml:space="preserve">
+    <value>Pracodawca</value>
+  </data>
+  <data name="CONTACT" xml:space="preserve">
+    <value>#KONTAKT</value>
+  </data>
+  <data name="CONTACTTEXT" xml:space="preserve">
+    <value>jeżeli udało mi się Państwa zainteresować swoją osobą i są Państwo chętni do podjęcia współpracy
+                                      ze mną to proszę o kontakt telefoniczny lub mailowy.
+                                      Dla Państwa wygody udostępniam także skype, viber oraz what's up.</value>
+  </data>
+  <data name="COOKIE" xml:space="preserve">
+    <value>Informuję, iż ta strona korzysta z plików cookie w celu polepszenia jakości działania strony.</value>
+  </data>
+  <data name="CSHARP1" xml:space="preserve">
+    <value>C# uczę się od lutego 2018r, do tej pory opanowałem solidne podstawy.
+                            W tym czasie wykonywałem zadania z</value>
+  </data>
+  <data name="CSHARP2" xml:space="preserve">
+    <value>, rozwiązywałem zadania z książek i uczelni wyższych.
+Ponadto miałem dostęp i korzystałem z takich gier jak</value>
+  </data>
+  <data name="CSHARP3" xml:space="preserve">
+    <value>Powyższe pomoce naukowe pozwoliły mi opanować C# w stopniu, który umożliwił mi na dalszy rozwój, napisanie aplikacji WPF oraz stworzenie prostej strony opartej o ASP.NET MVC</value>
+  </data>
+  <data name="CSSTEXT" xml:space="preserve">
+    <value>CSS zawsze był nieodzwoną częścią przy tworzeniu stron WWW, natomiast kiedy pierwszy raz się z nim zetknąłem to był
+                            dla mnie niczym magiczna księga napisana w obcym języku.
+                            Na moje szczęście jak to z każdą rzeczą, z którą zazwyczaj się stykam, został on przeze mnie opanowany w stopniu
+                            mniejszym, bądź większym.
+                            Niestety z uwagi na fakt, iż nie piszę stron na codzień, to też moja znajomość CSS3 jest na poziomie wg. mnie średnim,
+                            ale wystarczającym, aby napisać coś sensownego, a w podparciu googlem nawet bardziej sensownego.</value>
+  </data>
+  <data name="DATA" xml:space="preserve">
+    <value>DANE</value>
+  </data>
+  <data name="DEPARTMENT" xml:space="preserve">
+    <value>Inżynierii Materiałowej i Metalurgii</value>
+  </data>
+  <data name="DEPARTMENTNAME" xml:space="preserve">
+    <value>Wydział: </value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>OPIS: </value>
+  </data>
+  <data name="DOWNLOAD" xml:space="preserve">
+    <value>#POBIERZ</value>
+  </data>
+  <data name="EDUCATION" xml:space="preserve">
+    <value>WYKSZTAŁCENIE</value>
+  </data>
+  <data name="EMPTYFIELD1" xml:space="preserve">
+    <value>Wpisz login</value>
+  </data>
+  <data name="EMPTYFIELD2" xml:space="preserve">
+    <value>Wpisz hasło</value>
+  </data>
+  <data name="EUROMAXTEXT" xml:space="preserve">
+    <value>Prosta strona napisana na prośbę znajomego,
+                            który posiadał firmę developerską.
+                            Layaut, grafika oraz kod mojego autorstwa. Zewnętrznie jako gotowy
+                            komponent został wykorzystany fragment dotyczący wyświetlania galerii.</value>
+  </data>
+  <data name="EXPERIENCE" xml:space="preserve">
+    <value>DOŚWIADCZENIE</value>
+  </data>
+  <data name="FIELDOFSTUDY" xml:space="preserve">
+    <value>Kierunek: </value>
+  </data>
+  <data name="FIELDSTUDYNAME" xml:space="preserve">
+    <value>Zarządzanie i Inżynieria Produkcji</value>
+  </data>
+  <data name="FOUNDATION" xml:space="preserve">
+    <value>Fundacja Bytomski sport - Hostel Bytom</value>
+  </data>
+  <data name="GITHUB" xml:space="preserve">
+    <value>GITHUB</value>
+  </data>
+  <data name="GITTEXT" xml:space="preserve">
+    <value>GIT, system kontroli wersji. Niejedna książka została o nim napisana, z tego co zdążyłem zauważyć.
+                            Niestety ja nie mam za wiele do napisania. Wiem, że istnieje, korzystałem, mam konto na GIT HUB,
+                            jednak brak mi konkretnego doświadczenia w obsłudze GITa, zwłaszcza przy pracy w zespole, co jest spowodowane
+                            tym, iż uczę się wszystkiego sam.
+                            Reasumując podstawy znam, jednak nawet po przeczytaniu masy ksiązek, forów i kursów nadal bez pożądnej
+                            praktyki można znać jedynie podstawy.</value>
+  </data>
+  <data name="GOTIT" xml:space="preserve">
+    <value>ROZUMIEM!</value>
+  </data>
+  <data name="HIGHSCHOOLNAME" xml:space="preserve">
+    <value>Zespół Szkół Zawodowych nr 2 w Bytomiu</value>
+  </data>
+  <data name="HIGHSCHOOLSPEC" xml:space="preserve">
+    <value>Technik Mechanik</value>
+  </data>
+  <data name="HOBBY" xml:space="preserve">
+    <value>ZAINTERESOWANIA</value>
+  </data>
+  <data name="HOBBYTEXT" xml:space="preserve">
+    <value>Astronomia, programy naukowe, programowanie, gry (rpg, fpp, rts, planszowe, mmorpg).</value>
+  </data>
+  <data name="HTMLTEXT" xml:space="preserve">
+    <value>Z HTML mam do czynienia odkąd pamiętam. Moja przygoda z tym językiem rozpoczęła się jeszcze w latach '90,
+                            kiedy jako uczeń szkoły podstawowej dostałem pierwszy komputer, a następnie rozpocząłem lekcje informatyki
+                            w szkole. Od tamtej pory stworzyłem sporo stron www, niestety przetrwały do dziś tylko dwie, które prezentuję
+                            powyżej. Swoją pierwszą poważną stronę zrobiłem w '98 roku, na olimpiadę informatyczną i zająłem trzecie miejsce.
+                            Od tamtej pory zawsze realizowałem prośby, zamówienia znajomych, firm.</value>
+  </data>
+  <data name="INTERMEDIATE" xml:space="preserve">
+    <value>ŚREDNIO ZAAWANSOWANY</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>j. angielski B1</value>
+  </data>
+  <data name="LANGUAGES" xml:space="preserve">
+    <value>JĘZYKI OBCE</value>
+  </data>
+  <data name="LETSCSSTEXT" xml:space="preserve">
+    <value>Projekt wykonany w ramach warsztatów Let's CSS zorganizowanych w Katowicach przez firmę Coders Lab. Projekt w 90% wykonany w ramach pracy domowej. Jak na pierwszy raz z animacją w CSS myślę, że poszło dobrze.</value>
+  </data>
+  <data name="LOGIN" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="LOGINBUTTON" xml:space="preserve">
+    <value>ZALOGUJ</value>
+  </data>
+  <data name="LOGINLABLE" xml:space="preserve">
+    <value>LOGOWANIE</value>
+  </data>
+  <data name="LOGINPAGETEXTMAIN" xml:space="preserve">
+    <value>Strona powstała w oparciu o technologię ASP.NET MVC, framework Bootstrap oraz CSS3. Tym samym chciałem zaprezentować swoje umiejętności, dlatego też w dalszej części znajdują się wszelakie projekty przeze mnie zrealizowane oraz parę informacji dotyczących mojej osoby.</value>
+  </data>
+  <data name="LOGINPAGETEXTMRMRS" xml:space="preserve">
+    <value>Szanowni Państwo,</value>
+  </data>
+  <data name="LOGINPAGETEXTSECONDARY" xml:space="preserve">
+    <value>Login i Hasło do strony zostały podane w CV, którego strona jest uzupełnieniem.</value>
+  </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>WYLOGUJ</value>
+  </data>
+  <data name="MAURFIELD1" xml:space="preserve">
+    <value>Utrzymywanie kontaktu z powierzonym klientem,</value>
+  </data>
+  <data name="MAURFIELD2" xml:space="preserve">
+    <value>Zawieranie umów ubezpieczeniowych,</value>
+  </data>
+  <data name="MAURFIELD3" xml:space="preserve">
+    <value>Prowadzenie dokumentacji związanej z procedurami
+                            zawierania umów ubezpieczeniowych</value>
+  </data>
+  <data name="MAURFIELD4" xml:space="preserve">
+    <value>Pozyskiwanie nowych klientów</value>
+  </data>
+  <data name="MAURFIELD5" xml:space="preserve">
+    <value>Prowadzenie dokumentacji rozliczeniowej agencji</value>
+  </data>
+  <data name="ME" xml:space="preserve">
+    <value>#O MNIE</value>
+  </data>
+  <data name="MOREBUTTON" xml:space="preserve">
+    <value>WIĘCEJ</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>BRAK</value>
+  </data>
+  <data name="OFFERCONFIGURATOR" xml:space="preserve">
+    <value>KONFIGURATOR OFERT</value>
+  </data>
+  <data name="OTHERPROJECTS" xml:space="preserve">
+    <value>INNE PROJEKTY</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>HASŁO</value>
+  </data>
+  <data name="PHONE" xml:space="preserve">
+    <value>Telefon: </value>
+  </data>
+  <data name="PROGRAMMING" xml:space="preserve">
+    <value>PROGRAMOWANIE</value>
+  </data>
+  <data name="PROGRAMMINGFIELD1" xml:space="preserve">
+    <value>C#. WPF, ASP.NET MVC,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD2" xml:space="preserve">
+    <value>HTML. CSS3, BOOTSTRAP,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD3" xml:space="preserve">
+    <value>VISUAL STUDIO 2017,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD4" xml:space="preserve">
+    <value>GIT, SQL, IIS,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD5" xml:space="preserve">
+    <value>SCRUM, AGILE</value>
+  </data>
+  <data name="PROJ" xml:space="preserve">
+    <value>PROJEKTY: </value>
+  </data>
+  <data name="PROJECTS" xml:space="preserve">
+    <value>#PROJEKTY</value>
+  </data>
+  <data name="SILESIAN" xml:space="preserve">
+    <value>Politechnika Śląska w Katowicach</value>
+  </data>
+  <data name="SKILLFIELD6" xml:space="preserve">
+    <value>Chęć rozwoju zawodowego</value>
+  </data>
+  <data name="SKILLS" xml:space="preserve">
+    <value>ATUTY</value>
+  </data>
+  <data name="SKILLSFIELD1" xml:space="preserve">
+    <value>Analityczne myślenie</value>
+  </data>
+  <data name="SKILLSFIELD2" xml:space="preserve">
+    <value>Praca zespołowa</value>
+  </data>
+  <data name="SKILLSFIELD3" xml:space="preserve">
+    <value>Komunikatywność</value>
+  </data>
+  <data name="SKILLSFIELD4" xml:space="preserve">
+    <value>Szybkie przyswajanie wiedzy</value>
+  </data>
+  <data name="SKILLSFIELD5" xml:space="preserve">
+    <value>Odporność na stres</value>
+  </data>
+  <data name="SKILLSFIELD6" xml:space="preserve">
+    <value>Chęć rozwoju zawodowego</value>
+  </data>
+  <data name="SPECIALIZATIONNAME" xml:space="preserve">
+    <value>Technolog programista obrabiarek sterowanych numerycznie.</value>
+  </data>
+  <data name="SPECJALIZATION" xml:space="preserve">
+    <value>Specjalizacja: </value>
+  </data>
+  <data name="SPORTFIELD1" xml:space="preserve">
+    <value>Naprawa, konserwacja elementów bierzących,</value>
+  </data>
+  <data name="SPORTFIELD2" xml:space="preserve">
+    <value>Obsługa, konfiguracja szafy serwerowej,</value>
+  </data>
+  <data name="SPORTFIELD3" xml:space="preserve">
+    <value>Rozwiązywanie pojawiających się problemów związanych z obsługą hostelu,</value>
+  </data>
+  <data name="SPORTFIELD4" xml:space="preserve">
+    <value>Obsługa gości, w szczególności zagranicznych.</value>
+  </data>
+  <data name="SQLTEXT" xml:space="preserve">
+    <value>SQL - do niedawna trzy litery które nie mówiły mi nic poza tym, iż są to bazy danych.
+                            Jednak i na to przyszedł czas, najpierw szybki kurs na youtube na kanale           </value>
+  </data>
+  <data name="SQLTEXT1" xml:space="preserve">
+    <value>, gdzie w bardzo przystępny i prosty sposób wytłumaczone są podstawy.
+                            Następnie instalacja XAMPP i trochę treningu na localhoscie, co pozwoliło na opanowanie
+                            podstawowych zapytań select, from, delete, update, truncate oraz zabawę na myphpadmin.
+                            Następnie przyszedł czas na stworzenie bazy do logowania w projekcje mvc, ponieważ nie chciałem
+                            aby ludzie z zewnątrz mieli dostęp do tej strony.
+                            Baza postawiona jest na MSSQL, niestety problemy które wynikły przy łączeniu się z poziomu
+                            aplikacji mvc z baza MYSQL skłoniły mnie do prostrzego rozwiązania i bardziej kompatybilnego
+                            z technologią Microsoft.</value>
+  </data>
+  <data name="STUDYPLACE" xml:space="preserve">
+    <value>Placówka: </value>
+  </data>
+  <data name="STUDYTOPIC" xml:space="preserve">
+    <value>Opracowanie wyników prób zmęczenia cieplno-mechanicznego na podstawie stali: X20CrMoV12.1, P91 i P92.</value>
+  </data>
+  <data name="SZLIPSFIELD1" xml:space="preserve">
+    <value>Utrzymywanie relacji z klientami strategicznymi,</value>
+  </data>
+  <data name="SZLIPSFIELD2" xml:space="preserve">
+    <value>Przygotowywanie dokumentacji SIWZ,</value>
+  </data>
+  <data name="SZLIPSFIELD3" xml:space="preserve">
+    <value>Nadzór nad pozostałymi członkami zespołu (2 ludzi)</value>
+  </data>
+  <data name="SZLIPSFIELD4" xml:space="preserve">
+    <value>Przygotowywanie dokumentacji dla księgowości,</value>
+  </data>
+  <data name="SZLIPSFIELD5" xml:space="preserve">
+    <value>Tworzenie umów flotowych dla tzw. dużych flot,</value>
+  </data>
+  <data name="SZLIPSFIELD6" xml:space="preserve">
+    <value>Negocjacje warunków umów z towarzystwami ubezpieczeniowymi,</value>
+  </data>
+  <data name="SZLIPSFIELD7" xml:space="preserve">
+    <value>Prowadzenie rozliczeo wewnętrznych jak i zewnętrznych,
+                            wystawianie faktur, obsługa dokumentacji biurowej</value>
+  </data>
+  <data name="SZLIPSTEXT" xml:space="preserve">
+    <value>Strona dla firmy w której pracowałem, pisana całkowicie hobbystycznie w celu
+                            nauczenia się frameworka Bootstrap. Layaut, projekt graficzny oraz pomysł
+                            w całości mojego autorstwa. Niektóre rozwiązania wprowadzone w oparciu
+                            o StackOwerflow oraz Gotowe szablony JQuery, przerobione na własny użytek w miarę potrzeb.</value>
+  </data>
+  <data name="TECHNOLOGIES" xml:space="preserve">
+    <value>#TECHNOLOGIE</value>
+  </data>
+  <data name="THESISTOPIC" xml:space="preserve">
+    <value>Temat pracy dyplomowej: </value>
+  </data>
+  <data name="VISUALTEXT" xml:space="preserve">
+    <value>Visual studio 2017, program do pisania programów, wielka rzecz, tak myślałem gdy instalował się na moim SSD.
+                            Dlaczego akurat Visual studio? Kolega który jest programistą polecił mi go, drugim powodem było to, że jest
+                            to kompilator stworzony przez Microsoft, tak samo jak cały .NET.
+                            Pierwsze kroki nie były łatwe, ale jak już wspominałem - wyznaję zasadę, iż wszystkiego można się nauczyć
+                            w większym lub mniejszym stopniu, wystarczy tylko chcieć.
+                            Zapewne VS ma jeszcze wiele funkcji o których nie mam pojęcia, ale te które były mi w danej chwili potrzebne,
+                            np debbuger, snippet, skróty klawiszowe, zostały przeze mnie opanowane.</value>
+  </data>
+  <data name="WORKTIME" xml:space="preserve">
+    <value>Okres</value>
+  </data>
+  <data name="WPFTEXT" xml:space="preserve">
+    <value>W trzecim miesiącu nauki programowania nadszedł czas na pierwszą samodzielnie napisaną aplikację okienkową. Wybór padł początkowo na technologię WPF pomimo, iż nie za bardzo wiedziałem z czym to się je. Pierwsze próby napisania czego-kolwiek były ciężkie ponieważ nie wiedziałem co, gdzie i jak powinno zostać zrobione. Po tygodniu miałem już gotowy program, a następnie wprowadziłem kilka poprawek i ulepszeń.</value>
+  </data>
+</root>

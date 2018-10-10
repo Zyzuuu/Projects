@@ -1,0 +1,79 @@
+﻿@model MVCLogin.Models.User
+
+
+<div class="container-fluid tit">
+
+
+    @{
+        ViewBag.Title = "Login";
+    }
+    @if (ViewBag.Title == "Login")
+    {
+        Session.Clear();
+    }
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+
+        @Html.AntiForgeryToken();  //CSRF attack
+        @Html.ValidationSummary(true);
+        if (ViewBag.Message != null)
+        {
+            <div style="border: 1px solid red">
+                @ViewBag.Message
+            </div>
+        }
+
+        <div class="row align-middle vertical-center">
+            <div class="col-sm-6">
+
+                <table>
+
+                    <tr>
+                        <h5 class="vspace tit font-weight-bold" style="margin-left:20%">@MVCLogin.Resources.HomeTexts.LOGINLABLE</h5>
+                    </tr>
+                    <tr>
+                        <td>@Html.LabelFor(a => a.UserName)</td>
+                        <td><input class="textfildalign" id="UserName" name="UserName" type="text" /></td>
+                        <td><p class="margines">@Html.ValidationMessageFor(a => a.UserName)</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>@Html.LabelFor(a => a.Password)</td>
+                        <td><input class="textfildalign" id="Password" name="Password" type="password" /></td>
+                        <td><p class="margines"> @Html.ValidationMessageFor(a => a.Password)</p></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><input class="vspace submitfloat btn btn-default btn-sm" type="submit" value="@MVCLogin.Resources.HomeTexts.LOGINBUTTON" /></td>
+                    </tr>
+                </table>
+
+
+            </div>
+            <div class="col-sm-6" style="max-width:400px">
+
+                <p class="maintext tit"> @MVCLogin.Resources.HomeTexts.LOGINPAGETEXTMRMRS</p>
+                <p class="maintext tit text-justify">
+                    @MVCLogin.Resources.HomeTexts.LOGINPAGETEXTMAIN
+                <p class="maintext text-justify"> @MVCLogin.Resources.HomeTexts.LOGINPAGETEXTSECONDARY</p>
+
+
+
+            </div>
+
+            <div class="row">
+                <ul>
+                    <img src="~/Content/img/uk.png" style="border:solid" title="English language" width="35px" height="25px" style="margin-left:15px; margin-right: auto" onclick="location.href='@Url.Action(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "en" }, null)'" />
+                    <img src="~/Content/img/pl.png" style="border:solid" title="język polski" width="35px" height="25px" style="margin-left: 15px; margin-right: auto" onclick="location.href='@Url.Action(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), new { language = "pl" }, null)'" />
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    }
+
+
+</div>

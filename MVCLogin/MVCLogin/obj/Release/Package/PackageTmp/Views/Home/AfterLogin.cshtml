@@ -1,0 +1,349 @@
+﻿@{
+    ViewBag.Title = "Technology";
+}
+
+<div class="container">
+    <div class="col-lg-1">
+        <h1 class="vertical-text" style="text-align: center;margin-left: 5%; margin-right: 4%; margin-top: 350px" id="lefttitle">
+            @MVCLogin.Resources.HomeTexts.TECHNOLOGIES
+        </h1>
+    </div>
+
+
+    <div class="row" style="margin-left:50px; margin-top:50px">
+
+        <div class="grid example">
+            <div class="row">
+
+                <div class="box pic " data-toggle="collapse" data-parent="#accordion" href="#csharp">
+                    <div class="inner">
+                        <img src="~/Content/img/csharpicon.png" class="tech-img-size" title="C SHARP" />
+                    </div>
+                </div>
+
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#wpf">
+                    <div class="inner">
+                        <img src="~/Content/img/wpficon.png" class="tech-img-size" title=".NET WPF" />
+                    </div>
+                </div>
+
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#mvc">
+                    <div class="inner">
+                        <img src="~/Content/img/mvcicon.png" class="tech-img-size" title="ASP.NET MVC" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#html">
+                    <div class="inner">
+                        <img src="~/Content/img/htmlicon.png" class="tech-img-size" title="HTML" />
+                    </div>
+                </div>
+
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#css">
+                    <div class="inner">
+                        <img src="~/Content/img/cssicon.png" class="tech-img-size" title="CSS" />
+                    </div>
+                </div>
+
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#boot">
+                    <div class="inner">
+                        <img src="~/Content/img/bootstrapicon.png" class="tech-img-size" title="BOOTSTRAP" />
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#visual">
+                    <div class="inner">
+                        <img src="~/Content/img/visualicon.png" class="tech-img-size" title="VISUAL STUDIO 2017" />
+                    </div>
+                </div>
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#git">
+                    <div class="inner">
+                        <img src="~/Content/img/giticon.png" class="tech-img-size" title="GIT" />
+                    </div>
+                </div>
+                <div class="box pic" data-toggle="collapse" data-parent="#accordion" href="#sql">
+                    <div class="inner">
+                        <img src="~/Content/img/sqlicon.png" class="tech-img-size" title="SQL" />
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="panel-group" id="accordion" style="width:350px; margin-top:3.5%">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title panel-collapse" data-toggle="collapse" data-parent="#accordion" href="#csharp">
+                        C#
+                    </h4>
+                </div>
+                <div id="csharp" class="panel-collapse collapse on">
+                    <div class="panel-body panel-collapse">
+
+                        <span class="infofont font-weight-bold">  @MVCLogin.Resources.HomeTexts.BASICS</span>
+                        <div class="progress" style="height:10px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+
+
+                        <p class="infofont"><span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ</span> @MVCLogin.Resources.HomeTexts.NONE</p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.DESCRIPTION </span>
+                            @MVCLogin.Resources.HomeTexts.CSHARP1
+                            <a href="http://pl.spoj.com/" target="_blank">spoj</a>
+                            @MVCLogin.Resources.HomeTexts.CSHARP2
+                            <a href="https://www.codingame.com/start" target="_blank">Codin' game</a>
+                            ,
+                            <a href="https://codecombat.com/play" target="_blank">Code combat</a>,
+                            <a href="https://www.lumosity.com/" target="_blank">Luminosity</a>.
+
+                            @MVCLogin.Resources.HomeTexts.CSHARP3
+
+
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#wpf">
+
+                        .NET WPF
+
+                    </h4>
+                </div>
+                <div id="wpf" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.BASICS</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont"><span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>@MVCLogin.Resources.HomeTexts.OFFERCONFIGURATOR</p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.WPFTEXT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#mvc">
+
+                        APS.NET MVC
+
+                    </h4>
+                </div>
+                <div id="mvc" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.BASICS</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont"><span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>@MVCLogin.Resources.HomeTexts.ACTUALYDISPLAYSITE</p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.ASPTEXT
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#html">
+
+                        HTML
+
+                    </h4>
+                </div>
+                <div id="html" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.INTERMEDIATE</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont">
+                            <span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>
+                            <a href="~/Content/projects/szlips/index.html" _target="_blank">SZLIPS</a>,
+                            <a href="~/Content/projects/euromax/index.html" _target="_blank">EUROMAX</a>.
+
+                        </p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.HTMLTEXT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#css">
+
+                        CSS3
+
+                    </h4>
+                </div>
+                <div id="css" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.INTERMEDIATE</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont">
+                            <span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>
+                            @MVCLogin.Resources.HomeTexts.OTHERPROJECTS
+
+                        </p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.CSSTEXT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#boot">
+
+                        BOOTSTRAP
+
+                    </h4>
+                </div>
+                <div id="boot" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.INTERMEDIATE</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont">
+                            <span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>
+                            @MVCLogin.Resources.HomeTexts.OTHERPROJECTS
+
+                        </p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.BOOTTEXT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#visual">
+
+                        VISUAL STUDIO 2017
+
+                    </h4>
+                </div>
+                <div id="visual" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.BASICS</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont">
+                            <span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>
+                            @MVCLogin.Resources.HomeTexts.OTHERPROJECTS
+
+                        </p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.VISUALTEXT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#git">
+
+                        GIT HUB
+
+                    </h4>
+                </div>
+                <div id="git" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.BASICS</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont">
+                            <span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>
+                            @MVCLogin.Resources.HomeTexts.OTHERPROJECTS
+
+                        </p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.GITTEXT
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#sql">
+
+                        SQL
+
+                    </h4>
+                </div>
+                <div id="sql" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="barWrapper">
+                            <span class="infofont font-weight-bold">@MVCLogin.Resources.HomeTexts.BASICS</span>
+                            <div class="progress" style="height:10px">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="infofont">
+                            <span class="font-weight-bold">@MVCLogin.Resources.HomeTexts.PROJ </span>
+                            @MVCLogin.Resources.HomeTexts.OTHERPROJECTS
+
+                        </p>
+                        <p class="infofont text-justify">
+                            <span class="infofont font-weight-bold ">@MVCLogin.Resources.HomeTexts.DESCRIPTION</span>
+                            @MVCLogin.Resources.HomeTexts.SQLTEXT
+                            <a href="https://www.youtube.com/user/MiroslawZelent" target="_blank">PASJA INFORMATYKI [MIROSŁAW ZELENT]</a>
+                            @MVCLogin.Resources.HomeTexts.SQLTEXT1
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

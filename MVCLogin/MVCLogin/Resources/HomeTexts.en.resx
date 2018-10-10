@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ACTUALYDISPLAYSITE" xml:space="preserve">
+    <value>THIS SITE</value>
+  </data>
+  <data name="ADRESS" xml:space="preserve">
+    <value>Adress</value>
+  </data>
+  <data name="AGENCY" xml:space="preserve">
+    <value>Insurance agency "MAUR"</value>
+  </data>
+  <data name="APPTEXT" xml:space="preserve">
+    <value>This is my first application wrote using c# and .NET WPF Framework.
+I had an idea when i was work in insurance company, 
+it was supposed to be a tool for creating insurance offers in the form of an e-mail.
+But in this time i couldn`t do that because i didn`t know Any programming language.
+When i started my adventure with programming i thought i can write this app as my Project, and train myself programming skills aswell.</value>
+  </data>
+  <data name="ASPTEXT" xml:space="preserve">
+    <value>In my opnion natural thing in learning .NET was start with new technology, and it fell on ASP.NET MVC. My motivation to leatn this Framework was wilingness to improve my skills by new Framework and desire to learn something about what so much is said and wrote in the Web.
+My adventure with this technology i started from make login window till site views.
+I used to html, bootstrap, css3 i must say that mvc made big impression on me.  although I only got to know this technology a little bit.
+To write this site i used to information found in the Web, especially in stacoverflow.
+Now it’s time to read some books  or use some course to complete  knowledge about ASP.NET MVC.</value>
+  </data>
+  <data name="BASICS" xml:space="preserve">
+    <value>BASICS</value>
+  </data>
+  <data name="BIRTHDATE" xml:space="preserve">
+    <value>Birth date</value>
+  </data>
+  <data name="BOOTTEXT" xml:space="preserve">
+    <value>I can’t to tell You i know this Framework in 100%, but im using it freely.
+I know rules responsible for responsive, arrangement sites, and other basics functions of this Framework.
+As with privious ones i don’t have too much experience with this Framework, but i can’t tell my skills are very low.
+I’ve made few sites with using Bootstrap, and when i have problem i try serach a solution in the Web.</value>
+  </data>
+  <data name="BROKER" xml:space="preserve">
+    <value>Broker's office "Szlips"</value>
+  </data>
+  <data name="COMPANY" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="CONTACT" xml:space="preserve">
+    <value>#CONTACT</value>
+  </data>
+  <data name="CONTACTTEXT" xml:space="preserve">
+    <value>if you are interested in starting cooperation with me, write email or call me, please. For your convenience, I also provide skype and whatsapp.</value>
+  </data>
+  <data name="COOKIE" xml:space="preserve">
+    <value>This website uses cookies to ensure you get the best experience on our website.</value>
+  </data>
+  <data name="CSHARP1" xml:space="preserve">
+    <value>I started with C# In Feburary 2018 as totally newbie, and till now i’ve mastered
+strongbasics. In this whole time i learned form books, did college and</value>
+  </data>
+  <data name="CSHARP2" xml:space="preserve">
+    <value>tasks I also used aids such as games for coders:</value>
+  </data>
+  <data name="CSHARP3" xml:space="preserve">
+    <value>The above aids let me master C# to the extent that it Allows me  to write my own program In .NET 
+WPF Framework and next step was Web application with ASP.NET MVC.</value>
+  </data>
+  <data name="CSSTEXT" xml:space="preserve">
+    <value>I always using CSS3 when creating websites, but when i was seen it for first time it was for me like a magic book wrote in foreign language. Fortunately, it didn’t last long.
+Unfortunately, due to the fact that i do not use it too of ten i don’t have high skills in CSS3.
+But when i need to write something i can do it, sometimes im using Google or StackOverflow.</value>
+  </data>
+  <data name="DATA" xml:space="preserve">
+    <value>PERSONAL DATA</value>
+  </data>
+  <data name="DEPARTMENT" xml:space="preserve">
+    <value>Materials Engineering and Metalurgy</value>
+  </data>
+  <data name="DEPARTMENTNAME" xml:space="preserve">
+    <value>Department:</value>
+  </data>
+  <data name="DESCRIPTION" xml:space="preserve">
+    <value>DESCRITPION: </value>
+  </data>
+  <data name="DOWNLOAD" xml:space="preserve">
+    <value>#DOWNLOAD</value>
+  </data>
+  <data name="EDUCATION" xml:space="preserve">
+    <value>EDUCATION</value>
+  </data>
+  <data name="EMPTYFIELD1" xml:space="preserve">
+    <value>Enter login</value>
+  </data>
+  <data name="EMPTYFIELD2" xml:space="preserve">
+    <value>Enter password</value>
+  </data>
+  <data name="EUROMAXTEXT" xml:space="preserve">
+    <value>It`s a Simple site made by me for my friend`s request, which had a construction company. Layout and graphics is made by myself. The only one element which doesen`t mine, and i used it in constructing this site is fancybox in galery.</value>
+  </data>
+  <data name="EXPERIENCE" xml:space="preserve">
+    <value>EXPERIENCE</value>
+  </data>
+  <data name="FIELDOFSTUDY" xml:space="preserve">
+    <value>Field of study: </value>
+  </data>
+  <data name="FIELDSTUDYNAME" xml:space="preserve">
+    <value>Management and Production Engineering</value>
+  </data>
+  <data name="FOUNDATION" xml:space="preserve">
+    <value>Foundation sport in Bytom - Hostel Bytom</value>
+  </data>
+  <data name="GITHUB" xml:space="preserve">
+    <value>GITHUB</value>
+  </data>
+  <data name="GITTEXT" xml:space="preserve">
+    <value>GIT, version system control. I do not know this tool very well, but I'm learning it.
+The problem is that I do not have any experience with GIT, especially in team work with him.
+Currently, I learn everything about programming myself and I have no opportunity to practice with GIT.</value>
+  </data>
+  <data name="GOTIT" xml:space="preserve">
+    <value>GOT IT!</value>
+  </data>
+  <data name="HIGHSCHOOLNAME" xml:space="preserve">
+    <value>ZSZ No.2 Bytom</value>
+  </data>
+  <data name="HIGHSCHOOLSPEC" xml:space="preserve">
+    <value>Mechanical Technician</value>
+  </data>
+  <data name="HOBBY" xml:space="preserve">
+    <value>HOBBY</value>
+  </data>
+  <data name="HOBBYTEXT" xml:space="preserve">
+    <value>Astronomy, scientific programs, programming, games (mmorpg, fpp, rpg, rts, board games).</value>
+  </data>
+  <data name="HTMLTEXT" xml:space="preserve">
+    <value>This language i use at my primary school, which i attended in 90’s.
+I’ve made a lot pages in html, unfortunately, only two have survived to this Day.
+This sites are Projects for Szlips and Euromax.
+My first proffesional site was made in 98’s for IT Olympiad, where i took third place.
+At this time, i always makeing sites for my friends, and company which asks me for make site.</value>
+  </data>
+  <data name="INTERMEDIATE" xml:space="preserve">
+    <value>INTERMEDIATE</value>
+  </data>
+  <data name="LANGUAGE" xml:space="preserve">
+    <value>english language lvl. B1</value>
+  </data>
+  <data name="LANGUAGES" xml:space="preserve">
+    <value>LANGUAGES</value>
+  </data>
+  <data name="LETSCSSTEXT" xml:space="preserve">
+    <value>Project made in accordance with the workshops organized in Katowice by Coders Lab company. It's my first project in CSS where im using an animation and i think it went not bad, aswell. 90% of this project was made as homework by me.</value>
+  </data>
+  <data name="LOGIN" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="LOGINBUTTON" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="LOGINLABLE" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="LOGINPAGETEXTMAIN" xml:space="preserve">
+    <value>This site is made in ASP.NET MVC technology, and supported by Bootstrap Framework plus CSS3.
+I’ve made it to present my skills, therefore later You can find some Projects made by me, and more informations about me.</value>
+  </data>
+  <data name="LOGINPAGETEXTMRMRS" xml:space="preserve">
+    <value>Dear Mrs, Mr,</value>
+  </data>
+  <data name="LOGINPAGETEXTSECONDARY" xml:space="preserve">
+    <value>Login and Password were given in CV, because i didn’t want give acces for anyone, but Orly for recruiters.</value>
+  </data>
+  <data name="LOGOUT" xml:space="preserve">
+    <value>LOGOUT</value>
+  </data>
+  <data name="MAURFIELD1" xml:space="preserve">
+    <value>Maintaining contact with the entrusted client,</value>
+  </data>
+  <data name="MAURFIELD2" xml:space="preserve">
+    <value>Conclusion of insurance contracts,</value>
+  </data>
+  <data name="MAURFIELD3" xml:space="preserve">
+    <value>Keeping insurance documentation,</value>
+  </data>
+  <data name="MAURFIELD4" xml:space="preserve">
+    <value>Acquiring new clients,</value>
+  </data>
+  <data name="MAURFIELD5" xml:space="preserve">
+    <value>Backoffice</value>
+  </data>
+  <data name="ME" xml:space="preserve">
+    <value>#ABOUT ME</value>
+  </data>
+  <data name="MOREBUTTON" xml:space="preserve">
+    <value>MORE</value>
+  </data>
+  <data name="NONE" xml:space="preserve">
+    <value>NONE</value>
+  </data>
+  <data name="OFFERCONFIGURATOR" xml:space="preserve">
+    <value>INSURANCE OFFER CONFIGURATOR</value>
+  </data>
+  <data name="OTHERPROJECTS" xml:space="preserve">
+    <value>OTHER PROJECTS</value>
+  </data>
+  <data name="PASSWORD" xml:space="preserve">
+    <value>PASSWORD</value>
+  </data>
+  <data name="PHONE" xml:space="preserve">
+    <value>Phone: </value>
+  </data>
+  <data name="PROGRAMMING" xml:space="preserve">
+    <value>PROGRAMMING</value>
+  </data>
+  <data name="PROGRAMMINGFIELD1" xml:space="preserve">
+    <value>C#. WPF, ASP.NET MVC,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD2" xml:space="preserve">
+    <value>HTML. CSS3, BOOTSTRAP,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD3" xml:space="preserve">
+    <value>VISUAL STUDIO 2017,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD4" xml:space="preserve">
+    <value>GIT, SQL, IIS,</value>
+  </data>
+  <data name="PROGRAMMINGFIELD5" xml:space="preserve">
+    <value>SCRUM, AGILE</value>
+  </data>
+  <data name="PROJ" xml:space="preserve">
+    <value>PROJECTS: </value>
+  </data>
+  <data name="PROJECTS" xml:space="preserve">
+    <value>#PROJECTS</value>
+  </data>
+  <data name="SILESIAN" xml:space="preserve">
+    <value>Silesian University of Technology in Katowice</value>
+  </data>
+  <data name="SKILLFIELD6" xml:space="preserve">
+    <value>Desire for professional development</value>
+  </data>
+  <data name="SKILLS" xml:space="preserve">
+    <value>SKILLS</value>
+  </data>
+  <data name="SKILLSFIELD1" xml:space="preserve">
+    <value>Analytical thinking</value>
+  </data>
+  <data name="SKILLSFIELD2" xml:space="preserve">
+    <value>Team work</value>
+  </data>
+  <data name="SKILLSFIELD3" xml:space="preserve">
+    <value>Comunication</value>
+  </data>
+  <data name="SKILLSFIELD4" xml:space="preserve">
+    <value>Fast learning</value>
+  </data>
+  <data name="SKILLSFIELD5" xml:space="preserve">
+    <value>Stress resistance</value>
+  </data>
+  <data name="SKILLSFIELD6" xml:space="preserve">
+    <value>The desire for professional development</value>
+  </data>
+  <data name="SPECIALIZATIONNAME" xml:space="preserve">
+    <value>CNC programmer</value>
+  </data>
+  <data name="SPECJALIZATION" xml:space="preserve">
+    <value>Specialization</value>
+  </data>
+  <data name="SPORTFIELD1" xml:space="preserve">
+    <value>Repair, elements maintrance</value>
+  </data>
+  <data name="SPORTFIELD2" xml:space="preserve">
+    <value>Service and server maintenance</value>
+  </data>
+  <data name="SPORTFIELD3" xml:space="preserve">
+    <value>Solving current problems</value>
+  </data>
+  <data name="SPORTFIELD4" xml:space="preserve">
+    <value>Guest service, especially foreign ones</value>
+  </data>
+  <data name="SQLTEXT" xml:space="preserve">
+    <value>SQL – some time ago that was mystic item for me, i knew only it`s database.
+However i decided to learn a Little about this, at start i watch on youtube tutorial on</value>
+  </data>
+  <data name="SQLTEXT1" xml:space="preserve">
+    <value>channel, there Mr Mirosław explain a basics of SQL.
+Next i installed XAMPP and i trained a Little at localhost, thanks to this i mastered basics like selekt, from, delete, update, truncate etc... plus i learned how to use myphpadmin.
+Later i thought i should use this skills in practice and i made login window in my mvc Project.
+I`ve made database on MSSQL in webio.pl service, and it wasn`t hard, but before i did it im trying make the same on MYSQL and it was too much work to do it, so i decided to use MSSQL as simpler solution.</value>
+  </data>
+  <data name="STUDYPLACE" xml:space="preserve">
+    <value>Study place: </value>
+  </data>
+  <data name="STUDYTOPIC" xml:space="preserve">
+    <value>Development of the results of thermal and mechanical fatigue tests based on steel: X20CrMoV12.1, P91 and P92.</value>
+  </data>
+  <data name="SZLIPSFIELD1" xml:space="preserve">
+    <value>Maintaining relationships with strategic clients</value>
+  </data>
+  <data name="SZLIPSFIELD2" xml:space="preserve">
+    <value>Preparing SIWZ documentation</value>
+  </data>
+  <data name="SZLIPSFIELD3" xml:space="preserve">
+    <value>Supervision over team members</value>
+  </data>
+  <data name="SZLIPSFIELD4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SZLIPSFIELD5" xml:space="preserve">
+    <value>Preparing fleet agrements</value>
+  </data>
+  <data name="SZLIPSFIELD6" xml:space="preserve">
+    <value>Negotiations with insurance companies</value>
+  </data>
+  <data name="SZLIPSFIELD7" xml:space="preserve">
+    <value>backoffice</value>
+  </data>
+  <data name="SZLIPSTEXT" xml:space="preserve">
+    <value>I’ve made this site for company where i was working, for my previous employer.
+I started makeing this site because of my friend's request but i wanted to learn Bootstrap Framework aswell.
+It was my first time when i’ve seen this tool and i liked it.
+Layout, graphics and idea are mine, only some solutions are implemented thanks to JQery templates reworked by me. Very helpful was stackoverflow.</value>
+  </data>
+  <data name="TECHNOLOGIES" xml:space="preserve">
+    <value>#TECHNOLOGIES</value>
+  </data>
+  <data name="THESISTOPIC" xml:space="preserve">
+    <value>THESIS TOPIC: </value>
+  </data>
+  <data name="VISUALTEXT" xml:space="preserve">
+    <value>Visual studio 2017, You need this program if You want to write some application, so it`s big deal, i thought when i was installing it on my hard drive.
+Why i choose this program, not any other accessible on market?
+Because my friend said to me it`s good tool, and secondo reason was it`s compilator made by Microsoft, as entire .NET.
+First steps wasn`t easy but as i told earlier – if You want to learn something, do it. You can do it more or less, but You can do it. I know that VS is a big tool, and i don’t know all functions of this program, but all functions what i needed i learned: debbuger, snippet, keyboard shortcuts, and many more.</value>
+  </data>
+  <data name="WORKTIME" xml:space="preserve">
+    <value>Period: </value>
+  </data>
+  <data name="WPFTEXT" xml:space="preserve">
+    <value>in the third month of my studdy, the time has come for my first application where i used .NET WPF Framework.
+At start i didn’t know how to start with this Framework, because it was something completly new for me, but after The first week i had first draft of my application. Next i’ve made some upgreads and had completly working application.</value>
+  </data>
+</root>

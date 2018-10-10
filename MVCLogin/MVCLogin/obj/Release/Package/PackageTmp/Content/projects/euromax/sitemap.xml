@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://www.euromax.bytom.pl/</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/euromax.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/oferta.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/jednorodzinne.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/wielorodzinne.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/osiedle.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/slonecznadolina.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/index.html</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.euromax.bytom.pl/prospekt.pdf</loc>
+  <lastmod>2012-01-12T21:50:08+00:00</lastmod>
+  <changefreq>always</changefreq>
+  <priority>0.64</priority>
+</url>
+</urlset>

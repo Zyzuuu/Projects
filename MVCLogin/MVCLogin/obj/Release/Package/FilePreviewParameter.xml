@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="zyz" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\zyzu\\Documents\\Visual\ Studio\ 2015\\Projects\\MVCLogin\\MVCLogin\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\zyzu\\Documents\\Visual\ Studio\ 2015\\Projects\\MVCLogin\\MVCLogin\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="zyz/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\zyzu\\Documents\\Visual\ Studio\ 2015\\Projects\\MVCLogin\\MVCLogin\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="MyDataBaseEntities-Web.config Connection String" description="" value="metadata=res://*/Models.LoginDataModel.csdl|res://*/Models.LoginDataModel.ssdl|res://*/Models.LoginDataModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=(LocalDB)\MSSQLLocalDB;attachdbfilename=|DataDirectory|\MyDataBase.mdf;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\zyzu\\Documents\\Visual\ Studio\ 2015\\Projects\\MVCLogin\\MVCLogin\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MyDataBaseEntities']/@connectionString" />
+  </parameter>
+</parameters>

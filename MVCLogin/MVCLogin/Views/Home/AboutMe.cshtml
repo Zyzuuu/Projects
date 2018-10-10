@@ -1,0 +1,129 @@
+﻿@{
+    ViewBag.Title = "AboutMe";
+}
+<div class="containter tit">
+    <div class="row maindivspace"></div>
+
+    <!-- O MNIE-->
+
+    <div class="col-lg-1">
+        <h1 class="vertical-text tit" style="text-align: center;margin-left: 5%; margin-right: 4%; margin-top: 350px" id="lefttitle">
+            @MVCLogin.Resources.HomeTexts.ME
+        </h1>
+    </div>
+
+    <div class="row tit" style="margin-left: auto">
+
+        <div class="col-lg1 " style="margin-left: 50px;background-color:#312838">
+
+            <img src="~/Content/img/zdjecie/zdjecie.jpg" style="height:275px; width:215px;  margin-bottom: 5px" />
+
+            <div class="blackbar"><strong style="margin-left: 10px">@MVCLogin.Resources.HomeTexts.DATA</strong></div>
+
+            <p class="textatdark">@MVCLogin.Resources.HomeTexts.BIRTHDATE <br /> 05.05.1984 </p>
+            <p class="textatdark">@MVCLogin.Resources.HomeTexts.ADRESS <br />Tatrzańska 3/10 <br /> 41-907 Bytom</p>
+            <p class="textatdark">@MVCLogin.Resources.HomeTexts.PHONE <br /> 796-236-520</p>
+            <p class="textatdark">E-mail <br /> przemek.szymczuk@gmail.com</p>
+
+
+            <div class="blackbar"><strong style="margin-left: 10px">@MVCLogin.Resources.HomeTexts.SKILLS</strong></div>
+            <ul class="textatdark list-group" style="max-width:200px">
+                <li>@MVCLogin.Resources.HomeTexts.SKILLSFIELD1</li>
+                <li>@MVCLogin.Resources.HomeTexts.SKILLSFIELD2</li>
+                <li>@MVCLogin.Resources.HomeTexts.SKILLSFIELD3</li>
+                <li>@MVCLogin.Resources.HomeTexts.SKILLSFIELD4</li>
+                <li>@MVCLogin.Resources.HomeTexts.SKILLSFIELD5</li>
+                <li>@MVCLogin.Resources.HomeTexts.SKILLSFIELD6</li>
+            </ul>
+            <div class="blackbar"><strong style="margin-left: 10px">@MVCLogin.Resources.HomeTexts.LANGUAGES</strong> </div>
+            <ul class="textatdark list-group">
+                <li>@MVCLogin.Resources.HomeTexts.LANGUAGE</li>
+            </ul>
+            <div class="blackbar"><strong style="margin-left: 10px">@MVCLogin.Resources.HomeTexts.PROGRAMMING</strong> </div>
+
+
+            <ul class="textatdark list-group">
+                <li>@MVCLogin.Resources.HomeTexts.PROGRAMMINGFIELD1</li>
+                <li>@MVCLogin.Resources.HomeTexts.PROGRAMMINGFIELD2</li>
+                <li>@MVCLogin.Resources.HomeTexts.PROGRAMMINGFIELD3</li>
+                <li>@MVCLogin.Resources.HomeTexts.PROGRAMMINGFIELD4</li>
+                <li>@MVCLogin.Resources.HomeTexts.PROGRAMMINGFIELD5</li>
+            </ul>
+
+        </div>
+
+        <div class="col-lg-8" style="margin-left: 50px">
+            <div class="row">
+                <div class="col-lg-8">
+                <h5> <b>@MVCLogin.Resources.HomeTexts.EXPERIENCE</b></h5>
+                    <hr>
+                    <p class="text-justify" style="margin-left:10px">
+                        <b>@MVCLogin.Resources.HomeTexts.COMPANY</b> @MVCLogin.Resources.HomeTexts.FOUNDATION
+                        <br />
+                        <b>@MVCLogin.Resources.HomeTexts.WORKTIME</b> 10/2017 - 12/2017
+                    </p>
+
+                    <ul>
+                        <li>@MVCLogin.Resources.HomeTexts.SPORTFIELD1</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SPORTFIELD2</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SPORTFIELD3</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SPORTFIELD4</li>
+                    </ul>
+
+                    <hr>
+                    <p class="text-justify" style="margin-left:10px">
+                        <b>@MVCLogin.Resources.HomeTexts.COMPANY</b> @MVCLogin.Resources.HomeTexts.BROKER”
+                        <br />
+                        <b>@MVCLogin.Resources.HomeTexts.WORKTIME</b> 11/2014 - 8/2017
+                    </p>
+                    <ul>
+                        <li>@MVCLogin.Resources.HomeTexts.SZLIPSFIELD1</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SZLIPSFIELD2</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SZLIPSFIELD3</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SZLIPSFIELD5</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SZLIPSFIELD6</li>
+                        <li>@MVCLogin.Resources.HomeTexts.SZLIPSFIELD7</li>
+
+                    </ul>
+                    <hr>
+                    <p class="text-justify" style="margin-left:10px"><b>@MVCLogin.Resources.HomeTexts.COMPANY</b> @MVCLogin.Resources.HomeTexts.AGENCY</p>
+                    <ul>
+                        <li>@MVCLogin.Resources.HomeTexts.MAURFIELD1</li>
+                        <li>@MVCLogin.Resources.HomeTexts.MAURFIELD2</li>
+                        <li>@MVCLogin.Resources.HomeTexts.MAURFIELD3</li>
+                        <li>@MVCLogin.Resources.HomeTexts.MAURFIELD4</li>
+                        <li>@MVCLogin.Resources.HomeTexts.MAURFIELD5</li>
+                    </ul>
+                    <hr>
+                    <h5> <b>@MVCLogin.Resources.HomeTexts.EDUCATION</b></h5>
+                    <hr>
+                    <p class="text-justify" style="margin-left:10px">
+                        <b>@MVCLogin.Resources.HomeTexts.STUDYPLACE</b> @MVCLogin.Resources.HomeTexts.SILESIAN<br />
+                        <b>@MVCLogin.Resources.HomeTexts.DEPARTMENTNAME</b>@MVCLogin.Resources.HomeTexts.DEPARTMENT<br />
+                        <b>@MVCLogin.Resources.HomeTexts.FIELDOFSTUDY</b>@MVCLogin.Resources.HomeTexts.FIELDSTUDYNAME<br />
+                        <b>@MVCLogin.Resources.HomeTexts.THESISTOPIC</b> @MVCLogin.Resources.HomeTexts.STUDYTOPIC
+
+                        <br />
+                        <b>@MVCLogin.Resources.HomeTexts.WORKTIME</b> 2005 - 2010
+                    </p>
+                    <hr>
+                    <p class="text-justify" style="margin-left:10px">
+                        <b>@MVCLogin.Resources.HomeTexts.STUDYPLACE</b>@MVCLogin.Resources.HomeTexts.HIGHSCHOOLNAME<br />
+                        <b>@MVCLogin.Resources.HomeTexts.FIELDOFSTUDY</b>@MVCLogin.Resources.HomeTexts.HIGHSCHOOLSPEC<br />
+                        <b>@MVCLogin.Resources.HomeTexts.SPECJALIZATION</b> @MVCLogin.Resources.HomeTexts.SPECIALIZATIONNAME
+                        <br />
+
+                        <b>@MVCLogin.Resources.HomeTexts.WORKTIME</b> 2000 - 2005
+                    </p>
+
+                    <hr>
+                    <h5> <b>@MVCLogin.Resources.HomeTexts.HOBBY</b></h5>
+                    <p>@MVCLogin.Resources.HomeTexts.HOBBYTEXT </p>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
