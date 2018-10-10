@@ -1,0 +1,201 @@
+﻿<Window x:Class="LocalDatabaseApplication.MenagerWindow"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:LocalDatabaseApplication"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+      mc:Ignorable="d"
+      Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+      Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+      Title="Menager rozliczeń"
+      WindowStartupLocation="CenterScreen"
+      WindowState="Maximized"      
+      Language="pl-PL"
+        
+      PreviewKeyDown="DeleteItemFromDatabaseByDeleteKeyPress">
+    <Viewbox>
+        <!-- GRID -->
+        <Grid Height="829" Width="1520" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+
+            <!-- Left datagrid -->
+            
+            <DataGrid Name="agentDocument" IsReadOnly="true" AutoGenerateColumns="false" HorizontalAlignment="Stretch" Margin="10,52,842.2,124" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Background="White" BorderBrush="black">
+                <DataGrid.Columns>
+                    <!-- First column at left - Nr polisy -> Insurance policy number -->
+                    <DataGridTextColumn Header="Nr polisy" Binding="{Binding PolicyNumber}" MinWidth="150" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Second column at left - Data -> Date-->
+                    <DataGridTextColumn Header="Data" Binding="{Binding FullDate, StringFormat=d}" MinWidth="80" MaxWidth="100" >
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Center"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Third column at left - Wystawiający -> Insurer-->
+                    <DataGridTextColumn Header="Wystawiający" Binding="{Binding UserName}" MinWidth="180" MaxWidth="180">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Fourth column at left - Pośrednik -> Broker name -->
+                    <DataGridTextColumn Header="Pośrednik" Binding="{Binding Broker}" MinWidth="130" MaxWidth="180">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Fifth column at left - Status -> Status -->
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}" MinWidth="50" MaxWidth="180">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Right datagrid -->
+            
+            <DataGrid Name="importedDocument"  AutoGenerateColumns="false" HorizontalAlignment="Stretch" Margin="730,52,9.8,125" VerticalAlignment="Stretch" Width="Auto" Height="Auto" CanUserAddRows="false" Background="white" BorderBrush="black">
+                <!--First column at left - Nr polisy -> insurance policy number -->
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nr polisy" Binding="{Binding importedPolicyNumber}" MinWidth="255" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    
+                    <!--Second column at left - Inkaso -> Money took for policy -->
+                    <DataGridTextColumn Header="Inkaso" Binding="{Binding importedCashpayment}" MinWidth="100" MaxWidth="100">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!--Third column at left - Prowizja -> Money paid by insurance company to agent -->
+                    <DataGridTextColumn Header="Prowizja" Binding="{Binding ImportedAgnetProvision}" MinWidth="100" MaxWidth="100">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!--Fourth column at left - Agencja -> Agency name -->
+                    <DataGridTextColumn Header="Agencja" Binding="{Binding importedPolicyOwner}" MinWidth="180" MaxWidth="180">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"></Setter>
+                                <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"></Setter>
+                                <Setter Property="TextBlock.VerticalAlignment" Value="Center"></Setter>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+
+            
+            <!-- LEFT DATAGRID-->
+            
+            <!--Add document button-->
+            <Button Content="Dodaj" HorizontalAlignment="Left" Margin="11,711,0,0" VerticalAlignment="Top" Width="55" Height="41" Click="AddInsuranceDocumentButton"/>
+            <!--Delete document button-->
+            <Button Content="Usuń" HorizontalAlignment="Left" Margin="311,712,0,0" VerticalAlignment="Top" Width="55" Height="41" Click="RemovInsuranceDocumentButton"/>
+            <!--Edit document button-->
+            <Button Content="Edytuj" HorizontalAlignment="Left" Margin="131,712,0,0" VerticalAlignment="Top" Width="55" Height="41" Click="EditInsuranceDocumentButton"/>
+            <!--Search document button-->
+            <Button Content="Szukaj" HorizontalAlignment="Left" Margin="191,712,0,0" VerticalAlignment="Top" Width="55" Height="41" RenderTransformOrigin="5.285,2.156" Click="SearchPolicyButton"/>
+            <!--Import policies from Excel button-->
+            <Button Content="Importuj" HorizontalAlignment="Left" Margin="71,711,0,0" VerticalAlignment="Top" Width="55" Height="41" Click="ImportButton"/>
+            <!--Not settled documents button-->
+            <Button Content="Polisy Nierozliczone" HorizontalAlignment="Left" Margin="371,711,0,0" VerticalAlignment="Top" Width="127" Height="41" Click="NotSettledPolicysButton"/>
+            <!--Refresh datagrid button-->
+            <Button Content="Odśwież" HorizontalAlignment="Left" Margin="251,712,0,0" VerticalAlignment="Top" Width="55" Height="41" Click="RefreshUserDatagridButton"/>
+            <!-- Agent insurance policies label -->
+            <Label Content="Polisy agenta:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="596,26,0,0"/>
+            <!-- Username field with current logged user -->
+            <TextBlock  Name="userNameField" HorizontalAlignment="Left" Margin="24,26,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="255"/>
+
+
+            <!-- RIGHT DATAGRID -->
+            
+            <!--Open file button (Excel) & display pathfile TextBox-->
+            <TextBox Name="pathFile" HorizontalAlignment="Left" Height="23" Margin="1203,721,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>
+            <Button Name="openFile" Content="Otwórz plik" HorizontalAlignment="Left" Margin="1114,721,0,0" VerticalAlignment="Top" Width="84" Height="23" RenderTransformOrigin="5.285,2.156" Click="OpenFileButton"/>
+            <!--Generate list with settlement button-->
+            <Button Content="Generuj listę" HorizontalAlignment="Left" Margin="730,712,0,0" VerticalAlignment="Top" Width="75" Height="41" RenderTransformOrigin="5.285,2.156" Click="GenerateSettlementButton"/>
+            <!-- Importes policies from excel file label -->
+            <Label Content="Polisy importowane z pliku:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="730,26,0,0"/>
+            <!-- Logged as label -->
+            <Label Content="Zalogowany jako:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="21,0,0,0"/>
+
+            <!-- CHECKBOXES -->
+            
+            <!-- Filter datagrid -->
+            <Label Content="Filtruj listę" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,769,0,0" Width="67"/>
+            <!-- Display by logged user checkbox -->
+            <CheckBox Name="atLoggedUser" Content="Po zalogowanym użytkowniku" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,775,0,0" Checked="atLoggedUser_Checked"/>
+            <!-- Display all documents in database checkbox-->
+            <CheckBox Name="allDocuments" Content="Wszystkie polisy" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="88,795,0,0" Checked="allDocuments_Checked" />
+
+        </Grid>
+    </Viewbox>
+</Window>
+
+    
+    

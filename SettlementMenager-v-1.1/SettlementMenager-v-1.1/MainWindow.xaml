@@ -1,0 +1,42 @@
+﻿<Window x:Class="LocalDatabaseApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalDatabaseApplication"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize" 
+        Title="Okno logowania" Height="250" Width="350" WindowState="Normal" Language="pl-PL" WindowStartupLocation="CenterScreen"  >
+
+    <Viewbox>
+        <Grid Width="342">
+
+            <!-- FIELDS -->
+
+            <!-- User name TextBlock & Combobox -->
+            <TextBlock HorizontalAlignment="Left" Margin="21,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"><Run Text="Użytkwnik"/><LineBreak/><Run/></TextBlock>
+            <ComboBox  Name="nameData" HorizontalAlignment="Left" Margin="92,31,0,0" VerticalAlignment="Top" Width="214"/>
+
+            <!-- Password TextBlock & PasswordBox -->
+            <TextBlock HorizontalAlignment="Left" Margin="21,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="71"><Run Text="Hasło"/><LineBreak/><Run/></TextBlock>
+            <PasswordBox PasswordChar="*"  Name="passwordField" HorizontalAlignment="Left" Height="23" Margin="92,68,0,0"  VerticalAlignment="Top" Width="214"/>
+            
+            <!-- BUTTONS -->
+
+            <!-- Login button "Zaloguj" -->
+            <Button Name="loginButton" Background="green" Content="Zaloguj" HorizontalAlignment="Left" Margin="231,116,0,0" VerticalAlignment="Top" Width="75" Height="36" Click="loginButton_Click" IsDefault="True"/>
+            <!-- Add user button "+" -->
+            <Button Name="addUserButton" Background="green" Content="+" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"   Width="40" Height="40" Margin="92,116,0,64"  FontSize="22" FontWeight="Bold" Click="addUserButton_Click" />
+            <!-- Remove user button "-" -->
+            <Button Name="removeUserButton" Background="red" Content="-" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"   Width="40" Height="40" Margin="137,116,0,64"  FontSize="22" FontWeight="Bold" Click="removeUserButton_Click" />
+            <!-- Connection setup button & Label " Ustawienia połączenia" -->
+            <Button Name="connectionSetupButton" Margin="235,170,36,14" Background="Transparent" Height="36" Click="SetConnectionSetupButton">
+                <StackPanel Height="31" Width="56">
+                    <Image Source="Resources\connection-icon.png" Width="55" Height="29" Margin="0,0,1,0" />
+                </StackPanel>
+            </Button>
+            <Label Content="Ustawienia połączenia" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="221,200,0,-0.2" Width="103" FontSize="9" Height="21"/>
+
+        </Grid>
+    </Viewbox>
+</Window>

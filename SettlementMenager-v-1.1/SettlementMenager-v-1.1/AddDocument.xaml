@@ -1,0 +1,42 @@
+﻿<Window x:Class="LocalDatabaseApplication.AddDocument"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalDatabaseApplication"
+        mc:Ignorable="d"
+        Title="Dodaj polisę" 
+        Height="250" Width="350" 
+        ResizeMode="CanMinimize"  
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Normal" 
+        Language="pl-PL">
+        <Grid Margin="0,0,-6,-2">
+
+        <!-- FIELDS -->
+
+        <!-- Policy number Textbox & Textblock-->
+        <TextBox Name="policyNumberTextField" HorizontalAlignment="Left" Height="23" Margin="129,49,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="158"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,49,0,0" TextWrapping="Wrap" Text="Numer polisy" VerticalAlignment="Top" Width="91" Height="23"/>
+        
+        <!-- Broker name Textbox & Textblock-->
+        <TextBox x:Name="brokerNameTextField" HorizontalAlignment="Left" Height="23" Margin="129,120,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="158"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,120,0,0" TextWrapping="Wrap" Text="Pośrednik" VerticalAlignment="Top" Width="91" Height="23"/>
+
+        <!-- DATE Datapicker & Textblock -->
+        <DatePicker Name="addDate" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="129,84,0,0" Width="158"/>
+        <TextBlock HorizontalAlignment="Left" Margin="33,84,0,0" TextWrapping="Wrap" Text="Data" VerticalAlignment="Top" Width="91" Height="23"/>
+
+        <!-- BUTTONS-->
+            
+        <!-- Add button -->
+        <Button Content="Dodaj" HorizontalAlignment="Left" Margin="123,166,0,0" VerticalAlignment="Top" Width="84" Height="35" Click="AddPolicyToDatabaseButton" IsDefault="True"/>
+        
+        <!-- Clear fields button -->    
+        <Button Content="Wyczyść" HorizontalAlignment="Left" Margin="33,166,0,0" VerticalAlignment="Top" Width="85" Height="35" Click="ClearFieldsButton" RenderTransformOrigin="0.535,0.834"/>
+        
+        <!-- Close window button -->    
+        <Button Content="Zamknij" HorizontalAlignment="Left" Margin="212,166,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="CloseWindowButton" RenderTransformOrigin="0.208,0.447"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,123 @@
+﻿<Window x:Class="LocalDatabaseApplication.SettlementWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalDatabaseApplication"
+        mc:Ignorable="d"
+        Height="{x:Static SystemParameters.PrimaryScreenHeight}" 
+        Width="{x:Static SystemParameters.PrimaryScreenWidth}" 
+        Title="Rozliczenie"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Language="pl-PL">
+    <Viewbox>
+        <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="0,0,-6.4,5.4">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <DataGrid Grid.Row="0" x:Name="settlementDataGrid" HorizontalAlignment="Left" AutoGenerateColumns="false" Background="White" BorderBrush="black" CanUserAddRows="false" Width="1434" Margin="0,0,0,146.4">
+                <DataGrid.Columns>
+                <!-- First column at left - Nr polisy -> Insurance policy number -->
+                    <DataGridTextColumn Header="Nr polisy" Binding="{Binding settlementPolicyNumber}" MinWidth="140" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="Background" Value="White"/>
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    <!-- Second column at left - Wystawiający -> Agent whos made insurance policy -->
+                    <DataGridTextColumn Header="Wystawiający" Binding="{Binding settlementUserName}" MinWidth="140" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Third column at left - Data -> Date -->
+                    <DataGridTextColumn Header="Data" Binding="{Binding settlementDate, StringFormat=d}" MinWidth="80" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Fourth column at left - Inkaso -> Cash payed for insurance policy by customer -->
+                    <DataGridTextColumn Header="Inkaso" Binding="{Binding settlementCashpayment}" MinWidth="120" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    
+                    <!-- Fifth column at left - Agencja -> Agency name -->
+                    <DataGridTextColumn Header="Agencja" Binding="{Binding settlementPolicyOwner}" MinWidth="120" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                    <!-- Sixth column at left - Prowizja na polisie -> Cash payed by insurance company to Agent -->
+                    <DataGridTextColumn Header="Prowizja na polisie" Binding="{Binding settlementAgentProvision}" MinWidth="120" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+                    
+                    <!-- Seventh column at left - Pośrednik -> Brokers name -->
+                    <DataGridTextColumn Header="Pośrednik" Binding="{Binding settlementBrokerName}" MinWidth="120" MaxWidth="255">
+                        <DataGridTextColumn.ElementStyle>
+                            <Style TargetType="{x:Type TextBlock}">
+                                <Setter Property="TextWrapping" Value="Wrap" />
+                                <Setter Property="HorizontalAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Stretch"/>
+                                <Setter Property="TextBlock.TextAlignment" Value="Left"/>
+                                <Setter Property="VerticalAlignment" Value="Center"/>
+                            </Style>
+                        </DataGridTextColumn.ElementStyle>
+                    </DataGridTextColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Export to excel button and change insurance policy status in database for settled -->
+            <Button Name="exportbtn" Content="Eksportuj" HorizontalAlignment="Left" Margin="1268,688,0,0" VerticalAlignment="Top" Width="125" Height="46" Click="prntButtonClick" />
+
+        </Grid>
+    </Viewbox>
+</Window>

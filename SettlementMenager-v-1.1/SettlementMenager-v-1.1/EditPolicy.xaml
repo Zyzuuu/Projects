@@ -1,0 +1,48 @@
+﻿<Window x:Class="LocalDatabaseApplication.EditPolicyDocument"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LocalDatabaseApplication"
+        mc:Ignorable="d"
+        Title="Edytuj polisę" 
+        Height="250" 
+        Width="550" 
+        ResizeMode="CanMinimize"  
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Normal" 
+        Language="pl-PL">
+    
+    <Grid Margin="0,0,4,-6">
+
+        <!-- FIELDS -->
+
+        <!-- Header label in top-right corner of window -->
+        <Label Content="Bieżąca polisa w edycji:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,4,0,0" Width="183" Height="26" HorizontalContentAlignment="Center"/>
+
+        <!-- Policy number Textbox & Textblock & Label-->
+        <TextBox x:Name="policyNumberTextField" HorizontalAlignment="Left" Height="23" Margin="128,30,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="158"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,30,0,0" TextWrapping="Wrap" Text="Numer polisy" VerticalAlignment="Top" Width="91" Height="23"/>
+        <Label x:Name="policyDataLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,30,0,0" Width="183" Height="23"  HorizontalContentAlignment="Right"/>
+        
+        <!-- Date Datepicker & Textblock & Label -->
+        <DatePicker x:Name="editDate" HorizontalAlignment="Left" Margin="128,69,0,0" VerticalAlignment="Top" Width="158"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,69,0,0" TextWrapping="Wrap" Text="Data" VerticalAlignment="Top" Width="91" Height="23"/>
+        <Label x:Name="dateToEdit" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,70,0,0" Width="183" Height="23"  HorizontalContentAlignment="Right"/>
+        
+        <!-- Agent name Combobox & Textblock & Label -->
+        <ComboBox x:Name="userComboboxField" HorizontalAlignment="Left" VerticalAlignment="Top" Width="158" Margin="128,106,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,106,0,0" TextWrapping="Wrap" Text="Wystawiający" VerticalAlignment="Top" Width="91" Height="23"/>
+        <Label x:Name="userDataLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,106,0,0" Width="183" Height="32"  HorizontalContentAlignment="Right"/>
+        <!-- Broker name Textbox & Textblock & Label -->
+        <TextBox x:Name="brokerNameTextField" HorizontalAlignment="Left" Height="23" Margin="128,143,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="158"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,143,0,0" TextWrapping="Wrap" Text="Pośrednik" VerticalAlignment="Top" Width="91" Height="23"/>
+        <Label x:Name="brokerNameLabel" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="347,143,0,0" Width="183" Height="23" HorizontalContentAlignment="Right"/>
+        
+        <!-- BUTTONS -->
+        
+        <!-- Save button-->
+        <Button Content="Zapisz" HorizontalAlignment="Left" Margin="128,184,0,0" VerticalAlignment="Top" Width="158" Height="21" RenderTransformOrigin="0.517,0.909" Click="SaveAndCloseWindowButton" IsDefault="True" Background="Green"/>
+     
+    </Grid>
+</Window>

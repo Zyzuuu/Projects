@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettlementMenager-v-1.1", "SettlementMenager-v-1.1\SettlementMenager-v-1.1.csproj", "{B3B5AFF1-7F04-4200-91E8-2B4D2EBE327F}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Menager", "Menager\Menager.vdproj", "{62E47531-41E8-4F7D-88B7-7511CE0EB232}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3B5AFF1-7F04-4200-91E8-2B4D2EBE327F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3B5AFF1-7F04-4200-91E8-2B4D2EBE327F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3B5AFF1-7F04-4200-91E8-2B4D2EBE327F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3B5AFF1-7F04-4200-91E8-2B4D2EBE327F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E47531-41E8-4F7D-88B7-7511CE0EB232}.Debug|Any CPU.ActiveCfg = Debug
+		{62E47531-41E8-4F7D-88B7-7511CE0EB232}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A9F400DB-5CB1-408C-88E0-AD9852AEF8C8}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DatabasemdfModelStoreContainer" CdmEntityContainer="masterEntities">
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="Database.mdfModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="userPolicyData">
+      <EntityTypeMapping TypeName="Database.mdfModel.userPolicyData">
+        <MappingFragment StoreEntitySet="userPolicyData">
+          <ScalarProperty Name="policyStatus" ColumnName="policyStatus" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="policyNumber" ColumnName="policyNumber" />
+          <ScalarProperty Name="brokerName" ColumnName="brokerName" />
+          <ScalarProperty Name="fullDate" ColumnName="fullDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="connectionSetup">
+      <EntityTypeMapping TypeName="Database.mdfModel.connectionSetup">
+        <MappingFragment StoreEntitySet="connectionSetup">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="loginToDatabase" ColumnName="loginToDatabase" />
+          <ScalarProperty Name="passwordToDatabase" ColumnName="passwordToDatabase" />
+          <ScalarProperty Name="connectionPort" ColumnName="connectionPort" />
+          <ScalarProperty Name="ipAdress" ColumnName="ipAdress" />
+          <ScalarProperty Name="checkedCheckbox" ColumnName="checkedCheckbox" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

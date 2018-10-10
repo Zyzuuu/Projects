@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SettlementMenager_v_1._1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="entityLocalDb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">connectionString="metadata=res://*/DataModelDB.csdl|res://*/DataModelDB.ssdl|res://*/DataModelDB.msl;provider=System.Data.SqlClient;
+         provider connection string=&amp;quot;&amp;#xD;&amp;#xA; data source=localhost\SQLEXPRESS;Database=Database.mdf;integrated security=True;connect timeout=30;
+         MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClientproviderName="System.Data.EntityClient"
+</Value>
+    </Setting>
+    <Setting Name="entityLanDb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">connectionString="metadata=res://*/DataModelDB.csdl|res://*/DataModelDB.ssdl|res://*/DataModelDB.msl;provider=System.Data.SqlClient;provider connection string=&amp;quot;data source=25.51.93.64;initial catalog=Database.mdf;persist security info=True;user id=sa;password=palka8;MultipleActiveResultSets=True;App=EntityFramework&amp;quot;" providerName="System.Data.EntityClient"</Value>
+    </Setting>
+    <Setting Name="masterLocalDb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">"Data Source=localhost\\SQLEXPRESS; Database = master; Integrated security=SSPI;"</Value>
+    </Setting>
+    <Setting Name="masterLanDb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=25.51.93.64;Network Library=DBMSSOCN; Initial Catalog = Databases; Database=Database.mdf; User ID = sa; Password = palka8</Value>
+    </Setting>
+    <Setting Name="databaseLocalDb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=localhost\SQLEXPRESS; Database = Database.mdf; Integrated security=SSPI</Value>
+    </Setting>
+    <Setting Name="databaseLanDb" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=25.51.93.64;Network Library=DBMSSOCN; Initial Catalog = Databases; Database=master; User ID = sa; Password = palka8</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
