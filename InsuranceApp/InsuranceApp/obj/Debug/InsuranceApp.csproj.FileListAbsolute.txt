@@ -1,0 +1,16 @@
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe.config
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.pdb
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csprojResolveAssemblyReference.cache
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\MainWindow.g.cs
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\App.g.cs
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp_MarkupCompile.cache
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp_MarkupCompile.lref
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\App.baml
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\MainWindow.baml
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.g.resources
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.Properties.Resources.resources
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csproj.GenerateResource.Cache
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csproj.CoreCompileInputs.cache
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.exe
+C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.pdb
