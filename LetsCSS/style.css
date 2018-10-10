@@ -1,0 +1,1111 @@
+/*
+light blue: #85cadd
+blue: #29abe2
+yellow: #fbbb21
+red: #c1272d
+green: #00a99d
+violet: #5854ae
+grey: #4a4a49
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: content-box;
+}
+
+/*Body setup*/
+
+body {
+    background-color: #85cadd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	overflow: hidden;
+	
+}
+
+/*Main container 1000 x 600px*/
+.container{
+	
+	width: 1000px;
+	height: 600px;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: relative;
+    
+}
+
+/*Tree container with tree elements, because we have 3 trees and we need to copy it*/
+
+.tree{
+	
+	position: absolute;
+	 bottom: 70px;
+    left: -140px;
+
+}
+
+.two{
+		position: absolute;
+	 bottom: 70px;
+    left: 550px;
+}
+
+.three{
+	position: absolute;
+	 bottom: 70px;
+    left: 780px;
+}
+
+
+.crown
+{
+	z-index: 2;
+	position: absolute;
+	 bottom: 0;
+    left: 0;
+}
+
+.crown-element
+{
+	
+	width: 40px;
+	height: 40px;
+	background-color: green;
+	border-radius: 50%;
+	border: 2px solid #4a4a49;
+	position: absolute;
+	
+}
+
+.crown .crown-element:nth-child(2)
+{
+    left: 20px;
+}
+
+.crown .crown-element:nth-child(3)
+{
+    top: -20px;
+    left: 4px;
+    
+}
+
+.trunk{
+   
+   background-color: yellow;
+   height: 40px;
+   width: 15px;
+   position: absolute;
+   margin-top:30px;
+   margin-left: 20px;
+      
+}
+
+/*Horizontal short lines at bottom of the image, with copies as nth-child*/
+
+.horizontal-short-lines-container{
+	position: absolute;
+	bottom: -40px;
+    left:0px;
+	height: 40px;
+	width: 100%;
+	
+}
+
+.line
+{
+	background-color: grey;
+	width: 50px;
+	height: 3px;
+	bottom: -20px;
+    left:15px;
+	position: relative;
+	
+}
+
+
+.horizontal-short-lines-container .line:nth-child(2){
+
+	bottom: -25px;
+    left:157px;
+}
+.horizontal-short-lines-container .line:nth-child(3){
+	
+	bottom: -15px;
+    left:279px;
+}
+
+.horizontal-short-lines-container .line:nth-child(4){
+
+	bottom: -5px;
+    left:525px;
+}
+
+.horizontal-short-lines-container .line:nth-child(5){
+
+   bottom: -15px;
+   left:679px;
+	
+}
+
+.horizontal-short-lines-container .line:nth-child(6){
+
+	bottom: -2px;
+    left:840px;
+
+}
+
+/*Confetti elements it the air, where plain is flying (lines and circles)*/
+
+.small-elements{
+
+	width: 1000px;
+	height: 300px;
+    z-index: -1;
+}
+
+.small-circle{
+	
+	width: 10px;
+	height: 10px;
+	background-color: green;
+	border-radius: 50%;
+	position: absolute;
+	margin-top: 190px;
+	margin-left: 125px;
+	
+}
+
+.small-elements .small-circle:nth-child(1){
+	
+	margin-top: 130px;
+	margin-left: 415px;
+	background-color: purple;
+    z-index: -3;
+	
+}
+
+.small-elements .small-circle:nth-child(2){
+	
+	margin-top: 175px;
+	margin-left: 615px;
+	background-color: yellow;
+	
+}
+
+.small-rotate-line
+{
+	
+	width: 30px;
+	height: 5px;
+	background-color: yellow;
+	transform: rotate(-40deg);
+	position: absolute;
+	margin-top: 150px;
+	margin-left: 65px;
+    z-index: -3;
+	
+}
+.small-elements .small-rotate-line:nth-child(4)
+{
+	
+	background-color: black;
+	transform: rotate(40deg);
+	margin-top: 220px;
+	margin-left: 225px;
+}
+
+.small-elements .small-rotate-line:nth-child(5)
+{
+	
+	background-color: white;
+	transform: rotate(25deg);
+	margin-top: 190px;
+	margin-left: 655px;	
+}
+
+.small-elements .small-rotate-line:nth-child(6)
+{
+	
+	background-color: green;
+	transform: rotate(-40deg);
+	margin-top: 150px;
+	margin-left: 785px;
+}
+
+/*Here we start with buildings and we have one big container for all of buildings*/
+
+.buildings
+{
+	position: absolute;
+	bottom: 0px;
+    left:0px;
+	height: 270px;
+	width: 100%;
+}
+
+/*3rd building count at left image position. Building with animated windows*/
+
+.building-with-windows
+{
+	width: 70px;
+	height: 250px;
+	background-color: silver;
+	bottom: 0px;
+	position: absolute;
+	z-index: -1;
+	margin-left: 420px;
+	border: 2px solid black;
+}
+
+.window{
+	background-color: purple;
+	width: 20px;
+	height: 30px;
+	border: 2px solid black;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 13px;
+}
+
+/*4th building count at left, Palace of Culture and Science, i've made it using floors as segments, and nth-child*/
+
+.accordeon-building{
+	
+	width: 220px;
+	height: 250px;
+	bottom: 0px;
+	position: absolute;
+	z-index: -1;
+	margin-left: 520px;	
+}
+
+.floor{
+
+	height: 30px;
+	width: 6px;
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+.accordeon-building .floor:nth-child(2){
+	height: 14px;
+	width: 9px;
+	background-color: silver;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: 2px solid black;
+	border-bottom: 0;
+}
+.accordeon-building .floor:nth-child(3){
+	height: 14px;
+	width: 18px;
+	background-color: silver;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: 2px solid black;
+	border-bottom: 0;
+}
+.accordeon-building .floor:nth-child(4){
+	height: 22px;
+	width: 25px;
+	background-color: silver;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: 2px solid black;
+	border-bottom: 0;
+}
+.accordeon-building .floor:nth-child(5){
+	height: 22px;
+	width: 80px;
+	background-color: silver;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: 2px solid black;
+	border-bottom: 0;
+	
+}
+.accordeon-building .floor:nth-child(6){
+	height: 50px;
+	width: 80px;
+	background-color: silver;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: 2px solid black;
+	border-bottom: 0;
+}
+.accordeon-building .floor:nth-child(7){
+	height: 50px;
+	width: 120px;
+	background-color: silver;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border: 2px solid black;
+	border-bottom: 0;
+}
+.accordeon-building .floor:nth-child(8){
+	height: 30px;
+	width: 200px;
+	background-color: silver;
+	position: relative;
+	border: 2px solid black;
+}
+
+.door
+{
+	bottom: 0;
+	margin-left: 90px;
+	margin-right: auto;
+	border: 2px solid black;
+	border-bottom: 0;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: white;
+	
+}
+
+/*Main div for all plain*/
+
+.plain-main-div
+{
+	
+	margin-top: -150px;
+	
+}
+
+/*Plain body made from two rotated, coppied divs. Here we have other elements of this plain too, as wingos, window, and tail.*/
+
+.plain-body{
+	background-color: silver;
+	border: 3px solid black;
+	width: 160px;
+	height: 25px;
+	position: absolute;
+	border-radius: 12px;
+	transform: rotate(1deg);
+    
+}
+
+
+/*Second element of the plain body*/
+.plain-body:nth-child(2)
+{
+	transform: rotate(5deg);
+	transform-origin: 0 0;
+	transform: skewY(8deg);
+	border-top: none;
+	border-radius: 9px 0 9px 9px;
+	
+}
+
+.wing
+{
+	width: 50px;
+	height: 15px;
+	border-radius: 15px;
+	transform: rotate(-35deg);
+	position: absolute;
+	background-color: silver;
+	border: 2px solid black;
+	margin-left: 50px;
+	margin-top: 25px;
+	
+}
+
+.plain-window
+{
+	width: 25px;
+	height: 15px;
+	border-radius: 20px;
+	background-color: #85cadd;
+	border: 2px solid black;
+	position: absolute;
+	margin-left: 120px;
+	margin-top: 14px;
+	
+}
+
+.tail-container
+{
+	margin-left: -37px;
+	margin-top: -39px;
+	position: absolute;
+	transform: rotate(10deg);
+	
+	
+}
+
+.tail {
+    position: relative;
+    width:0;
+    border-bottom:solid 50px black;
+    border-right:solid 30px transparent;
+    border-left:solid 30px transparent;
+	transform: scale(0.7);
+	
+	
+}
+.tail .fill {
+    position: absolute;
+    top:9px;
+    left:-21px;
+    width:0;
+    border-bottom:solid 36px silver;
+    border-right:solid 21px transparent;
+    border-left:solid 21px transparent;
+}
+
+/*Next part of animation with the plain is banner with text, we have here lines connecting banner with plain, and flags at the end of the banner*/
+
+.banner{
+	
+	position: absolute;
+	
+}
+
+.banner-line{
+	
+	position: absolute;
+	width: 40px;
+	height: 2px;
+	background-color: black;
+	margin-left: -40px;
+	margin-top: 3px;
+	
+}
+
+.banner-line:nth-child(2){
+
+	position: absolute;
+	width: 40px;
+	height: 2px;
+	background-color: black;
+	margin-left: -38px;
+	margin-top: 22px;
+	transform: rotate(-20deg);
+}
+
+/*Banner main div content with two other divs which are transform rotate*/
+.banner-content
+{
+	width: 200px;
+	height: 55px;
+	margin-left: 0;
+	position: absolute;
+}
+
+
+.banner-transform
+{
+    background: orange;
+    border: 2px solid black;
+    width: 140px;
+    height: 80%;
+    position: absolute;
+    left: -315px;
+    transform: rotate(2deg) skewY(2deg);
+}
+
+.banner-transform:nth-child(4)
+{
+   left: -178px;
+    transform: rotate(-2deg) skewY(-2deg); 
+}
+.noborder-left
+{
+border-left: none;
+}
+
+/*Banner texts split for left and right text*/
+.banner-text
+{
+    font-family: Titillium Web;
+    left: 5px;
+    top: 7px;
+    position: absolute;
+    color: white;
+    
+    font-size: 0.9em;   
+}
+/*Coders Labs SZKOŁA PROGRAMOWANIA text*/
+.brand-name
+{
+   font-size: 1.2em;
+   font-family: Titilium Web;
+    font-weight: 900;
+   left: 10px;
+    top: 6px;
+    position: absolute;
+   max-width: 100%;
+   
+    
+}
+/*Colors for banner texts, white, black*/
+.white
+{
+    color:white;
+}
+.black
+{
+    color: black;
+}
+
+/*Small text with SZKOŁA PROGRAMOWANIA content*/
+.small-text
+{
+    font-size: 0.35em;
+    font-weight: 900;
+    margin-top: -2px;
+    position: absolute;
+    
+    
+}
+
+/*Animation div, where we have plain and banner div, which we want to animate with start position out of the screen`s range*/
+
+.animation
+{
+	 left: -500px;
+    position :relative;
+    -webkit-animation: mymove 5s infinite;
+    animation: animation 5s  infinite;
+    direction: normal;
+    -webkit-animation-delay: 2s;
+	animation-delay: 2s;
+     z-index: -2;
+   
+}
+
+/*Animation parts, starting at 0%, next 50%, 60% for smooth animation, and we going to end of animation at 100%, where plaing is going out of screen`s range again, and repeating animation*/
+
+@keyframes animation {
+    0% {left: -500px;
+        top: -100px;}
+    50%{left: 250px;
+        top: -100px;
+       
+        }
+    60%{left: 250px;
+        top: -100px;  
+       
+        }
+        100%{left: 170%;
+        top: -100px;
+        transform: rotate(-15deg);
+        transform-origin: 30% 10%}
+       
+}
+
+/*Two buildings looks like silos. It's pair of buildings in 5th position if we start count at left position of this image, or second posiotion counting at right*/
+
+.silos-buildings
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 850px;
+    
+}
+
+.silos-building
+{
+    width: 40px;
+    height: 80px;
+    background: silver;
+    position: relative;
+    top: 16px;
+    border: 2px solid black;
+}
+
+/*Here we've silo's roof made by content in HEX, with after effect so that transformation is possible on content element, because with before option we cant make transform directly at content*/
+
+.silos-roof
+{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top:-11px;
+   
+}
+.silos-roof:after
+{
+    content: "\25E2"; 
+    padding-right: 1px;
+    color: black; 
+    font-size: 45px;
+      display: inline-block;
+  transform: rotate(-135deg);
+}
+/*And here we move second silo in right, and scaling it because on original img it was smaller than that left side silo*/
+
+.right
+{
+    margin-left: 50px;
+    position: absolute;
+    transform: scaleY(0.75);
+    top:15px;
+}
+
+
+/*First building at right, with glowing line*/
+
+.right-building-container
+{
+    position: absolute;
+    width: 100px;
+	height: 300px;
+    right: 0;
+    bottom: 0;
+    margin-right: -30px;
+	
+}
+
+.skew-shape
+{
+   width: 106px;
+    height: 60px;
+    margin-top: 16px;
+    margin-left: 19px;
+    background: silver;
+  transform: rotate(-161deg);
+    z-index: 0;
+   border-bottom: 2px solid black;
+	
+}
+
+.irregular-shape
+{
+    width: 70px;
+	height: 300px;
+    transform: skew(15deg);
+    position: absolute;
+    background: silver;
+    border: 2px solid black;
+    border-right: none;
+    bottom: -4px;
+    
+}
+
+.regular-shape
+{
+    width: 80px;
+	height: 267px;
+    bottom: -4px;
+    margin-left: 52px;
+    position: absolute;
+    background: silver;
+    border: 2px solid black;
+    border-left: none;
+    border-top: none;
+    z-index: -1;
+}
+
+
+
+
+.chimney
+{
+    width: 20px;
+    height: 20px;
+    background: silver;
+    border: 2px solid black;
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 90px;
+    z-index: -2;
+    -webkit-z-index: -1;
+}
+
+/*Neon glowing on the building, changing colors*/
+
+.line-on-building {
+    -webkit-animation-name: pulse-line;
+    -webkit-animation-duration: 7s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: -2s;
+    height: 270px;
+    width: 3px;
+    transform: skew(1deg);
+    z-index: 1;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+@keyframes pulse-line {
+  2% { background-color: blue; top:5; -webkit-box-shadow: 0 0 9px blue; }
+  50% { background-color: red;top: 50px; -webkit-box-shadow: 0 0 18px red; }
+  100% { background-color: yellow;top: 51px; -webkit-box-shadow: 0 0 9px yellow; }
+    
+}
+
+
+/*First building at left, football arena */
+
+.arena-container
+{
+    
+    
+    width: 260px;
+    height: 200px;
+    left: -90px;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+}
+
+/*Arena's color*/
+
+.arena-fill
+{
+    border-bottom: 140px solid silver; 
+    border-left: 30px solid transparent; 
+    border-right: 30px solid transparent; 
+    height: 0; 
+    width: 200px;
+    transform: rotate(180deg);
+    position: absolute;
+    bottom: 5px;
+}
+
+/*The ribbed structure of the stadium, vertical and horizontal, changing the colors*/
+/*Vertical:*/
+
+/*Central beam of the structure - vertical beam without skew*/
+
+.element-vertical
+{
+    width: 3px;
+    height: 190px;
+    background: grey;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -4px;
+    z-index: 0;
+}
+
+/*Left part of vertical structure*/
+
+.arena-container .element-vertical:nth-child(2)
+{
+    width: 3px;
+    height: 170px;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 12px;
+    transform: skew(12deg);  
+    bottom: 5px;
+    
+}
+
+.arena-container .element-vertical:nth-child(3)
+{
+    width: 3px;
+    height: 160px;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 46px;
+    transform: skew(10deg); 
+    bottom: 5px;
+    
+}
+
+.arena-container .element-vertical:nth-child(4)
+{
+    width: 3px;
+    height: 150px;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 85px;
+    transform: skew(8deg);   
+    bottom: 5px;    
+}
+
+/*Right part of vertical structure*/
+
+.arena-container .element-vertical:nth-child(5)
+{
+    width: 3px;
+    height: 170px;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 245px;
+    transform: skew(-12deg);   
+    bottom: 5px;    
+}
+
+.arena-container .element-vertical:nth-child(6)
+{
+    width: 3px;
+    height: 160px;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 211px;
+    transform: skew(-10deg);   
+    bottom: 5px;    
+}
+
+
+.arena-container .element-vertical:nth-child(7)
+{
+     width: 3px;
+    height: 150px;
+    position: absolute;
+    margin-top: -190px;
+    margin-left: 172px;
+    transform: skew(-8deg);   
+    bottom: 5px;    
+}
+
+/*Horizontal:*/
+
+.element-horizontal
+{
+    width: 212px;
+    height: 3px;
+    position: absolute;
+   margin-left: 24px;
+    background: black;
+   
+    bottom: 30px;    
+    
+}
+
+.element-horizontal:nth-child(9)
+{
+    width: 227px;
+    height: 3px;
+    bottom: 68px;  
+    margin-left: 17px;
+    
+    
+}
+
+.element-horizontal:nth-child(10)
+{
+    width: 243px;
+    height: 3px;
+    bottom: 106px;    
+    margin-left: 9px;
+    
+}
+
+.element-horizontal:nth-child(11)
+{
+    width: 260px;
+    height: 3px;
+    bottom: 144px;    
+    margin-left: 0;
+}
+
+/*  part of the code responsible for glowing elements at arena */
+
+.glow-arena-element
+{
+    -webkit-animation-name: redglow;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes redglow {
+  from { background-color: red; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: white; -webkit-box-shadow: 0 0 18px #91bd09; }
+  to { background-color: red; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+.del-animation
+{
+    animation-delay: -2.5s
+}
+
+/*The top part of arena*/
+
+.nest
+{
+    width: 40px;
+    height: 16px;
+    background: silver;
+    border: 2px solid grey;
+    position: absolute;
+    top: 24px;
+    left: 108px;
+    border-radius: 40px;
+}
+
+.arena-line
+{
+    width: 124px;
+    height: 3px;
+    background: grey;
+    position: absolute;
+    transform: rotate(-5deg);
+    margin-left: 3px;
+    top: 47px;
+    z-index: -1;
+}
+
+.arena-line:nth-child(14)
+{
+     width: 124px;
+    height: 3px;
+    background: grey;
+    position: absolute;
+    transform: rotate(5deg);
+    margin-left: 138px;
+    top: 47px;
+    z-index: -1;
+}
+
+/*Second building at the image counting at left, bridge construction*/
+
+.bridge-container
+{
+   
+    width: 200px;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 200px;
+    z-index: -1;
+}
+
+/*The core of the bridge, two main beams at center */
+
+.bridge-element
+{
+    width: 5px;
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    background: silver;
+    bottom: 0;
+    transform: rotate(10deg);
+    margin-left: 76px;
+    z-index: 2;
+}
+
+.bridge-element:nth-child(2)
+{
+    
+    
+    transform: rotate(-10deg);
+    margin-left: 116px; 
+    z-index: 1;
+}
+
+/*Part of the road on the bridge*/
+
+.bridge-element:nth-child(3)
+{
+    
+    
+    width: 200px;
+    height: 8px;
+    margin-left: 0px; 
+    transform: rotate(0deg);
+    bottom: 10px;
+    z-index: 1;
+}
+
+/*Ropes supporting the bridge*/
+/*Left part*/
+
+.bridge-element:nth-child(4)
+{
+  
+    width: 3px;
+    height: 185px;
+    position: absolute;
+    background: grey;
+    transform: rotate(15deg);
+    margin-left: 69px;
+    margin-bottom: 16px;
+    border: none;
+    z-index: 1;
+}
+
+.bridge-element:nth-child(5)
+{
+  
+    width: 3px;
+    height: 193px;
+    position: absolute;
+    background: grey;
+    transform: rotate(21deg);
+    margin-left: 58px;
+    margin-bottom: 15px;
+    border: none;
+    z-index: 1;
+}
+
+.bridge-element:nth-child(6)
+{
+  
+    width: 3px;
+    height: 193px;
+    position: absolute;
+    background: grey;
+    transform: rotate(26deg);
+    margin-left:48px;
+    margin-bottom: 12px;
+    border: none;
+    z-index: 1;
+}
+
+/*Riht part of ropes*/
+
+.bridge-element:nth-child(7)
+{
+  
+    width: 3px;
+    height: 200px;
+    position: absolute;
+    background: grey;
+    transform: rotate(-25deg);
+    margin-left: 145px;
+    margin-bottom: 12px;
+    border: none;
+    z-index: -1;
+}
+
+.bridge-element:nth-child(8)
+{
+  
+    width: 3px;
+    height: 190px;
+    position: absolute;
+    background: grey;
+    transform: rotate(-15deg);
+    margin-left: 128px;
+    margin-bottom: 15px;
+    border: none;
+    z-index: -1;
+}
+
+.bridge-element:nth-child(9)
+{
+  
+    width: 3px;
+    height: 190px;
+    position: absolute;
+    background: grey;
+    transform: rotate(-21deg);
+    margin-left:138px;
+    margin-bottom: 12px;
+    border: none;
+    z-index: -1;
+}
