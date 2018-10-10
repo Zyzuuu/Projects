@@ -24,7 +24,8 @@ namespace SettlementMenager_v_1._1
             InitializeComponent();
 
             //Loads user from database into combobox, where DisplayMemberPath and SelectedValuePath = "Name".
-            ComboBoxSource.SetupItemsInComboBoxDisplay(chosePolicyOwnerCombobox, chosePolicyOwnerCombobox, chosePolicyOwnerCombobox);
+            ComboBoxSource.SetupItemsInComboBoxDisplay(chosePolicyOwnerCombobox.ItemsSource = DisplayComboboxList.SetUpNameInComboBox(),
+                                                           chosePolicyOwnerCombobox.DisplayMemberPath = "Name", chosePolicyOwnerCombobox.SelectedValuePath = "Name");
 
             //Fill combobox by current logged user.
             chosePolicyOwnerCombobox.SelectedValue = UserInformation.CurrentLoggedInUser;
