@@ -1,0 +1,12 @@
+Hi,
+
+You can download whole installer which i've made for this program.
+In package you have SQL SERVER 2008 and Menager installer or Settlement menager only.
+
+//Settlement menager with SQL server 2008 package
+
+www.easymodeoff.pl/Menager/Menager_SQL.7z
+
+//Settlement menager solo 
+
+www.easymodeoff.pl/Menager/Menager.exe
