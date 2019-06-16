@@ -1,0 +1,68 @@
+@import "../../../../../../styles.scss";
+
+.contact-section {
+    @extend %div-size;
+}
+
+.contact-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.contact-wrapper>div:nth-child(2) {
+    background: green;
+}
+
+iframe {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: 1px dotted black;
+}
+
+.two {
+    background: hsla(0, 0%, 0%, 0.59);
+    width: 400px;
+    position: absolute;
+    height: 100%;
+    right: 80px;
+}
+
+
+.center-header {
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+
+    &.second {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1023px) {
+    .two {
+        background: hsla(0, 0%, 0%, 0.59);
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        right: 0px;
+    }
+}
+
+.display {
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px dashed white;
+    border-bottom: 1px dashed white;
+}
+
+.contact-form {
+    margin-bottom: 50px;
+}

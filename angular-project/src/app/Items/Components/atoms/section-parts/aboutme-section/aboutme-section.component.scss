@@ -1,0 +1,73 @@
+@import "../../../../../../styles.scss";
+
+.container {
+    display: flex;
+    justify-items: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.child {
+    display: inline-block;
+    padding: 20px;
+    margin: 12px;
+
+}
+
+.child:first-child {
+    width: 99%;
+}
+
+.dashed {
+    border-bottom: 1px dashed black;
+}
+
+:nth-child(2) {
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+:nth-child(3) {
+    flex: 1;
+}
+
+
+.child:not(:first-child) {
+    flex: 1;
+    align-items: center;
+    justify-content: ce
+}
+
+
+@media screen and (max-width: 1023px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .child {
+        display: inline-block;
+    }
+
+    .child:first-child {
+        width: 99%;
+    }
+
+    :nth-child(2) {
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        order: 2;
+    }
+
+    :nth-child(3) {
+        flex: 1;
+    }
+}

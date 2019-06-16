@@ -1,0 +1,41 @@
+%animated-elements {
+
+    transition: 1s;
+
+}
+
+.button-container {
+    margin-top: 40px;
+    margin-left: 40px;
+    cursor: pointer;
+
+    &.active {
+        .middle {
+            opacity: 0;
+            transform: rotate(360deg)
+        }
+
+        .first {
+            @extend %animated-elements;
+            margin-bottom: -23px;
+            transform: rotate(45deg);
+        }
+
+        .last {
+            @extend %animated-elements;
+            margin-top: 17px;
+            transform: rotate(-45deg);
+        }
+
+    }
+}
+
+.ham {
+    border-radius: 25px;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: silver;
+    opacity: 1;
+    transition: 1s;
+}

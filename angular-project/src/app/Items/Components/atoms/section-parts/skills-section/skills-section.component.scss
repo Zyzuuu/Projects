@@ -1,0 +1,6 @@
+@import "../../../../../../styles.scss";
+
+.skills-section {
+  @extend %div-size;
+  background-color: yellow;
+}

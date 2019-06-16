@@ -1,0 +1,73 @@
+.nav {
+    min-height: 70px;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.left {
+    width: 78vw;
+}
+
+.right {
+    float: right;
+    width: 20vw;
+}
+
+.nav-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    z-index: 999;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+
+
+.button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (max-width: 1023px) {
+    .off {
+        display: none;
+    }
+
+    .on {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .on {
+        display: none;
+    }
+}
+
+.slide {
+    fill: black;
+    color: black;
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.trans {
+    background-color: #333;
+    border-bottom: 1px dotted white;
+}
+
+.notrans {
+    background: transparent;
+    border-bottom: 0px;
+}

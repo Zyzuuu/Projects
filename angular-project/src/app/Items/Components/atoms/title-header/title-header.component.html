@@ -1,0 +1,4 @@
+<p [ngClass]="{'text': shadow, 'upper-case': case == 'uppercase', 'lower-case': case =='lowercase' }"
+  [ngStyle]="{'font-size': fontsize, 'color': fontcolor}">
+  {{headerText | language : dictionary}}
+</p>

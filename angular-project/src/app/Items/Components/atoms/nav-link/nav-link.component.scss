@@ -1,0 +1,156 @@
+$a-link-visited: "a:link, a:visited";
+$a-link-active: "a:active, .active";
+$a-link-visited-color: hsl(0, 0, 100);
+
+%font-size {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+
+%child {
+    height: 20vh;
+    align-items: center;
+    transition: 500ms;
+    text-decoration: none;
+}
+
+%triangle {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    border-color: transparent #007bff transparent transparent;
+}
+
+%active-border {
+    @extend %font-size;
+    border-bottom: 1px solid white;
+}
+
+%active {
+    background: transparent;
+    color: #007bff;
+    text-decoration: underline;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+}
+
+#{$a-link-visited} {
+    @extend %font-size;
+    color: $a-link-visited-color;
+}
+
+#{$a-link-active} {
+    @extend %active-border,
+    %font-size;
+    color: $a-link-visited-color;
+}
+
+.inline {
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+a:hover {
+    color: $a-link-visited-color;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1023px) {
+    .inline {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .inline {
+        display: inline-block;
+    }
+}
+
+.square {
+    width: 100%;
+    border-bottom: 1px dotted white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+
+    &:nth-child(1) {
+        @extend %child;
+
+        &.active {
+            @extend %active;
+
+            &:after {
+                @extend %triangle;
+
+            }
+        }
+
+    }
+
+    &:nth-child(2) {
+        @extend %child;
+
+        &.active {
+            @extend %active;
+
+            &:after {
+                @extend %triangle;
+            }
+        }
+    }
+
+    &:nth-child(3) {
+        @extend %child;
+
+        &.active {
+            @extend %active;
+
+            &:after {
+                @extend %triangle;
+            }
+        }
+    }
+
+    &:nth-child(4) {
+        @extend %child;
+
+        &.active {
+            @extend %active;
+
+            &:after {
+                @extend %triangle;
+            }
+        }
+    }
+
+    &:nth-child(5) {
+        @extend %child;
+
+        &.active {
+            @extend %active;
+
+            &:after {
+                @extend %triangle;
+            }
+        }
+    }
+}
+
+img {
+    height: 100%;
+}

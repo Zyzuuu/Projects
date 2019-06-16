@@ -1,0 +1,15 @@
+button {
+    width: 170px;
+    height: 70px;
+    border: 1px dotted white;
+    outline: none;
+    background: hsla(0, 0%, 0%, 0.36);
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+        background: hsla(0, 0%, 0%, 0.76);
+        transition: 1s;
+    }
+}

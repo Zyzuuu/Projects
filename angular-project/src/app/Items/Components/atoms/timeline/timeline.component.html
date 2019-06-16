@@ -1,0 +1,10 @@
+<div class="timeline" *ngFor="let item of timeline">
+  <div class="container right" [id]="item.pulse" (click)="ShowDetails(item.anchor); RemovePulse(item.anchor)">
+    <div class="content">
+      <h2>{{item.dateFrom | date: 'MM/yyyy'}}</h2>
+      <p>{{item.dateTo | date: 'MM/yyyy'}}</p>
+      <p>{{langSwitch | language : item.place}}</p>
+      <p>{{langSwitch | language : item.job}}</p>
+    </div>
+  </div>
+</div>

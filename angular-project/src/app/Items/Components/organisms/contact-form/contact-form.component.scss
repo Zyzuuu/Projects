@@ -1,0 +1,108 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 400px;
+    padding: 20px;
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    height: 50px;
+    border: 0;
+    border-bottom: 1px silver solid;
+    outline: none;
+
+    &:focus {
+        border-bottom: 2px black solid;
+    }
+}
+
+textarea::placeholder {
+    padding-top: 15px;
+}
+
+button:disabled {
+    background: transparent;
+    cursor: not-allowed;
+
+    &:hover {
+        background: transparent;
+        color: black;
+        border: 1px dotted black;
+    }
+}
+
+.touched {
+    border-bottom: 2px #00e605 solid;
+}
+
+.error {
+    border-bottom: 2px red solid;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+textarea {
+    height: 90px;
+}
+
+.send-button {
+    height: 60px;
+    border: 1px dotted black;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    color: black;
+
+    &:hover {
+        transition: 1s;
+        background: black;
+        opacity: 1;
+        color: white;
+        border: 1px dotted white;
+    }
+}
+
+
+
+.button-wrapper {
+    background: red;
+    height: 100px;
+    z-index: 10;
+    top: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    margin-left: 20px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 5px;
+    color: white;
+
+    &:after {
+        content: " *";
+        color: red;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+        width: 100%;
+    }
+}
