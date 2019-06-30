@@ -20,4 +20,6 @@ export class TitleHeaderComponent implements OnInit {
   ngOnInit(): void {
     this.language.lang.subscribe(lang => this.headerText = lang);
   }
+
+
 }

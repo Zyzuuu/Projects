@@ -1,1 +1,11 @@
-<img src="assets/img/photo.png">
+<div *ngIf="source;then img; else text"></div>
+
+<ng-template #img>
+    <img class="options" [src]="source" [ngStyle]="{'width': width, 'height': height, 'background': background,
+         'border': border, 'border-radius': borderradius}">
+</ng-template>
+
+<ng-template #text>
+    <div class="options" [ngStyle]="{'width': width, 'height': height, 'background': background,
+         'border': border, 'border-radius': borderradius, 'opacity': opacity, 'z-index': index}">{{avatarText}}</div>
+</ng-template>

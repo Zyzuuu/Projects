@@ -1,11 +1,19 @@
 <div class="card-wrapper">
-  <div>
-    <app-title-header [dictionary]="'name'" [fontcolor]="'white'"></app-title-header>
+  <div class="header-wrapper">
+    <app-avatar [border]="'1px solid black'" [width]="'100px'" [height]="'100px'" [source]="'assets/img/photo.png'"
+      class="avatar-position">
+    </app-avatar>
+    <app-title-header [dictionary]="'name'"></app-title-header>
+    <app-avatar [border]="'1px dashed silver'" [background]="'white'" [width]="'80px'" [height]="'80px'"
+      [source]="infoAvatarSource" class="skill-avatar">
+    </app-avatar>
   </div>
-  <div>
-    <app-avatar class="avatar-position"></app-avatar>
-  </div>
-  <div>
-    {{languageSwitch | language : companyName}}
+  <div class="card-body">
+    <div class="card-body-text">
+      <p>{{languageSwitch | language : companyName}}</p>
+      <app-list-li [paddingleft]="'50px'" [data]="softintExperience"></app-list-li>
+
+    </div>
+
   </div>
 </div>

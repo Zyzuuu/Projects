@@ -40,14 +40,14 @@ async function main(subject, mail, name, message) {
         port: 587,
         secure: false,
         auth: {
-            user: '***',
-            pass: '***'
+            user: 'przemek.szymczuk@gmail.com',
+            pass: 'apokalipsa123'
         }
     });
 
     await transporter.sendMail({
         from: '"Recrutation from site" <przemek.szymczuk@gmail.com>',
-        to: "przemek.szymczuk@gmail.com",
+        to: `przemek.szymczuk@gmail.com`,
         subject: `${subject}`, // Subject line
         text: null, // plain text body
         html:

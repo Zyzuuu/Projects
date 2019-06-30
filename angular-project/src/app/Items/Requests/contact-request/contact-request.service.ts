@@ -13,8 +13,8 @@ export class ContactRequestService {
   ContactRequest(param: ContactFormModel) {
     const body = new URLSearchParams();
     body.set('name', param.name);
-    body.set('subject', param.subject);
-    body.set('mail', param.mail);
+    body.set('subject', param.topic);
+    body.set('mail', param.email);
     body.set('message', param.message);
     return this.contactReq.baseHttpOneHeader<RootObjectError>('/send_mail', body.toString());
   }

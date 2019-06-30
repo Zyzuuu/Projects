@@ -1,0 +1,16 @@
+<div class="container">
+  <ul class="tilesWrap">
+    <li *ngFor="let item of projects">
+      <div class="content">
+        <h2>{{item.header}}</h2>
+        <h3>{{item.title}}</h3>
+        <p>
+          {{item.text}}
+        </p>
+        <a [href]="item.link" target="_blank">
+          <button>{{item.button}}</button>
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>

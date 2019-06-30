@@ -10,26 +10,17 @@
 
     to {
         opacity: 1;
-        bottom: 200px;
+        bottom: 10%;
+        position: absolute;
     }
 }
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 40%
-    }
-}
-
 
 .button {
     animation-name: landingButton;
     animation-delay: 2s;
     animation-duration: 2s;
     animation-fill-mode: both;
+    opacity: 1;
 }
 
 
@@ -37,24 +28,24 @@
     @extend %div-size;
     display: flex;
     align-items: center;
-    background-image: url("../../../../../../assets/img/a.jpg");
+    background-image: linear-gradient(to bottom right, red, yellow);
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
+    border-bottom: 5px solid orange;
 }
 
 %center-wrapper-options {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
 }
 
 .wrapper {
     z-index: 0;
-    @extend %center-wrapper-options;
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
@@ -63,15 +54,20 @@
 
 .text-wrapper {
     @extend %center-wrapper-options;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+
 }
 
 .button-wrapper {
     @extend %center-wrapper-options;
 }
 
-.twinkling {
+
+.clouds {
     background: transparent;
-    animation-name: twinkle;
+    animation-name: cloudanimation;
     animation-duration: 700s;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
@@ -80,9 +76,17 @@
     animation-iteration-count: infinite;
 }
 
+.transparency {
+    transition: .25s;
+    opacity: 0.7;
+}
 
+.not-transparency {
+    transition: .25s;
+    opacity: 1;
+}
 
-@keyframes twinkle {
+@keyframes cloudanimation {
     from {
         background-repeat: repeat-x;
         background-image: url('../../../../../../assets//img/cloud_PNG24.png');
@@ -96,13 +100,43 @@
     }
 }
 
-.typewriter {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation:
-        typing 2.5s steps(30, end),
+div>p {
+    margin-top: 50px;
+    font-size: 1.5rem;
+    width: 400px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15%;
+    }
+
+    div>p {
+        width: 100%;
+    }
+}
+
+
+
+.top {
+    padding: 10px;
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    word-wrap: break-word;
+}
+
+.bottom {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }

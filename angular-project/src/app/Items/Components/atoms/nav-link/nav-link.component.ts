@@ -12,12 +12,13 @@ import { ScrollService } from 'app/Items/Services/scroll/scroll.service';
 export class NavLinkComponent implements OnInit {
   navbarItemDisplay = true;
   private active = 'home';
-  public langText = 'pl';
-  mobile = true;
+  private langText = 'pl';
+  private mobile = true;
   @Input() navbarType: boolean;
   @Input() navigateTo: NavLink;
 
   constructor(private language: LanguageService,
+
     private jump: JumpToService,
     private scroll: ScrollService) { }
 
@@ -25,6 +26,7 @@ export class NavLinkComponent implements OnInit {
     this.scroll.activeLink.subscribe(activeLink => this.active = activeLink);
     this.language.lang.subscribe(lang => this.langText = lang);
   }
+
   SetActive = (buttonName: string) => {
     this.active = buttonName;
   }

@@ -58,6 +58,8 @@ $a-link-visited-color: hsl(0, 0, 100);
 
 a:hover {
     color: $a-link-visited-color;
+    border-bottom: 1px dotted white;
+
 }
 
 ul {

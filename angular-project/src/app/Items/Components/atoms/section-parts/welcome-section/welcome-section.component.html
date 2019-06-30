@@ -1,13 +1,16 @@
 <div #home class="main">
-    <div class="wrapper twinkling">
-        <div class="text-wrapper ">
-            <app-title-header class="typewriter" [shadow]="true" [dictionary]="'welcome'" [fontcolor]="'white'"
-                [fontsize]="'8vw'">
-            </app-title-header>
+    <div #cloud class="wrapper clouds">
+        <div class="top">
+            <app-title-header [dictionary]="'welcome'" [fontsize]="'40px'" [fontcolor]="'black'"></app-title-header>
+            <p>
+                <app-title-header [dictionary]="'welcomeText'" [fontcolor]="'black'">
+                </app-title-header>
+            </p>
         </div>
-        <div class="button-wrapper">
-            <app-button class="button" [dictionary]="'about'" (click)="Scroll('#about')"></app-button>
+        <div class="bottom">
         </div>
-
     </div>
+</div>
+<div #button class="button-wrapper">
+    <app-button appCloudsChange class="button" [dictionary]="'about'" (click)="Scroll('#about')"></app-button>
 </div>

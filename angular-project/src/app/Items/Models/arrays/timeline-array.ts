@@ -1,3 +1,5 @@
+import * as infoType from './types';
+
 export const timeline = [
     {
         dateFrom: new Date(2018, 9),
@@ -6,7 +8,8 @@ export const timeline = [
         content: 'Młodszy programista Angular',
         anchor: 'soft',
         job: 'programmer',
-        pulse: 'first'
+        pulse: 'first',
+        type: infoType.infoType[0].experience,
     },
     {
         dateFrom: new Date(2014, 9),
@@ -15,7 +18,8 @@ export const timeline = [
         content: 'Agent ubezpieczeniowy',
         anchor: 'szlips',
         job: 'assistant',
-        pulse: 'second'
+        pulse: 'second',
+        type: infoType.infoType[0].experience,
     },
     {
         dateFrom: new Date(2010, 11),
@@ -24,7 +28,8 @@ export const timeline = [
         content: 'Agent ubezpieczeniowy',
         anchor: 'maur',
         job: 'agent',
-        pulse: 'third'
+        pulse: 'third',
+        type: infoType.infoType[0].experience,
     },
     {
         dateFrom: new Date(2005, 9),
@@ -33,7 +38,8 @@ export const timeline = [
         content: 'Zarządzanie i inżynieria produkcji',
         anchor: 'polsl',
         job: 'student',
-        pulse: 'fourth'
+        pulse: 'fourth',
+        type: infoType.infoType[0].education,
     }
 ];
 

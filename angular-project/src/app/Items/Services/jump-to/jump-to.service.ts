@@ -7,14 +7,14 @@ export class JumpToService {
 
   constructor() { }
 
-  scroll(anchor: string) {
+  scroll(anchor: string, padding?: number) {
     const height = window.innerHeight;
 
     if (anchor === '#home') {
       window.scrollTo(0, 0);
     }
     if (anchor === '#about') {
-      window.scrollTo(0, height);
+      window.scrollTo(0, height - padding);
     }
     if (anchor === '#skills') {
       window.scrollTo(0, height * 2);

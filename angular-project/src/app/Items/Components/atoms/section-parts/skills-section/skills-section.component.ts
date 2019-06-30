@@ -8,6 +8,7 @@ import { ScrollService } from 'app/Items/Services/scroll/scroll.service';
 })
 export class SkillsSectionComponent implements OnInit {
   @ViewChild('skills') el: ElementRef;
+  @ViewChild('skillss') element: ElementRef;
   constructor(private scroll: ScrollService) { }
 
   ngOnInit(): void {

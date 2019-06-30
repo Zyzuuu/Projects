@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-avatar',
@@ -6,6 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./avatar.component.scss']
 })
 export class AvatarComponent implements OnInit {
+
+  @Input() source: string;
+  @Input() width: string;
+  @Input() height: string;
+  @Input() background: string;
+  @Input() border: string;
+  @Input() borderradius: string;
+  @Input() avatarText: string;
+  @Input() opacity: string;
+  @Input() index: string;
 
   constructor() { }
 

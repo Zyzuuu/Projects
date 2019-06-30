@@ -5,13 +5,12 @@
     justify-items: space-between;
     flex-wrap: wrap;
     padding: 10px;
+    background: white;
 }
 
 .child {
     display: inline-block;
-    padding: 20px;
     margin: 12px;
-
 }
 
 .child:first-child {
@@ -23,23 +22,18 @@
 }
 
 :nth-child(2) {
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    padding: 20px;
+    border: 1px dashed black;
 }
 
 :nth-child(3) {
     flex: 1;
 }
 
-
 .child:not(:first-child) {
     flex: 1;
     align-items: center;
-    justify-content: ce
+    justify-content: center;
 }
 
 
@@ -61,10 +55,7 @@
     }
 
     :nth-child(2) {
-        justify-content: center;
-        align-items: center;
-        flex: 1;
-        order: 2;
+        display: none;
     }
 
     :nth-child(3) {

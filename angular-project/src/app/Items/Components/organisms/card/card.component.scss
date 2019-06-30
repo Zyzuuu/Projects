@@ -9,50 +9,41 @@
     border-left: 1px dashed black;
 }
 
-.card-wrapper {
+.header-wrapper {
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    align-items: center;
+    font-size: 30px;
+    border: 1px dashed silver;
+    position: relative;
 }
 
-.card-wrapper>div:nth-child(1) {
-    @extend %options;
-    background-color: black;
-    line-height: 75px;
+.skill-avatar {
+    position: absolute;
+    bottom: -40px;
+    right: 50px;
 }
 
-.contact {
-    width: 100%;
-    border-top-width: 10px;
+app-title-header {
+    margin-left: 20px;
 }
 
-.avatar-position {
+app-avatar.avatar-position {
     padding: 20px;
 }
 
-.card-wrapper>div:nth-child(2) {
-    @extend %options,
-    %border;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    flex-direction: column;
-    line-height: 75px;
-
+.card-body {
+    border-left: 1px dashed silver;
+    border-right: 1px dashed silver;
+    border-bottom: 1px dashed silver;
 }
 
-.card-wrapper>div:nth-child(3) {
-    @extend %options,
-    %border;
-    background-color: white;
-    border-bottom: 15px solid black;
-    font-size: 2rem;
-    padding: 10px 10px 50px 10px;
+.card-body-text {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
 }
 
-@media screen and (max-width: 1023px) {
-    .card-wrapper {
-        display: none;
-    }
+p {
+    padding-bottom: 10px;
 }

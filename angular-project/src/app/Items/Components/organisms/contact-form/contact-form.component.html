@@ -1,16 +1,35 @@
-<form #form="ngForm" (submit)="SubmitForm()">
-  <label for="field.subject">{{languageSwitch | language : 'topicLabel'}}:</label>
-  <input [ngClass]="{'touched': subject.valid}" required [(ngModel)]="field.subject" #subject="ngModel" type="text"
-    name="field.subject" id="field.subject">
-  <label for="field.name">{{languageSwitch | language : 'nameLabel'}}:</label>
-  <input [ngClass]="{'touched': name.valid}" #name="ngModel" required [(ngModel)]="field.name" type="text"
-    name="field.name" id="field.name">
-  <label for="field.mail">E-mail</label>
-  <input [ngClass]="{'touched': mail.valid && mail.touched, 'error': !mail.valid && mail.touched}" #mail="ngModel"
-    required [(ngModel)]="field.mail" placeholder="{{languageSwitch | language : 'mailText'}}"
-    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="field.mail" id="field.mail">
-  <label for="field.message">{{languageSwitch | language : 'messageLabel'}}:</label>
-  <textarea [ngClass]="{'touched': msg.valid}" #msg="ngModel" required [(ngModel)]="field.message" type="text"
-    name="field.message" id="field.message"></textarea>
-  <button class="send-button" type="submit" [disabled]="form.invalid">SUBMIT</button>
+<form [formGroup]='contactForm' (ngSubmit)="SubmitForm(contactForm)">
+  <div class="group">
+    <label>{{languageSwitch | language : 'topicLabel'}}</label>
+    <input formControlName="topic" name="topic" type="text">
+    <div class="message" *ngIf="contactForm.get('topic').invalid && isSubmitted">
+      {{languageSwitch | language: 'fieldRequired'}}
+    </div>
+  </div>
+  <div class="group">
+    <label>{{languageSwitch | language : 'nameLabel'}}</label>
+    <input formControlName="name" name="name" type="text">
+    <div class="message" *ngIf="contactForm.get('name').invalid && isSubmitted">
+      {{languageSwitch | language: 'fieldRequired'}}
+    </div>
+  </div>
+  <div class="group">
+    <label>E-mail</label>
+    <input formControlName="email" name="email" type="email" email>
+    <div class="message" *ngIf="contactForm.get('email').errors.required && isSubmitted">
+      {{languageSwitch | language: 'fieldRequired'}}
+    </div>
+    <div class="message"
+      *ngIf="contactForm.get('email').errors && contactForm.get('email').errors.email && isSubmitted">
+      {{languageSwitch | language: 'wrongEmail'}}
+    </div>
+  </div>
+  <div class="textarea">
+    <label>{{languageSwitch | language : 'messageLabel'}}</label>
+    <textarea formControlName="message" name="message" type="text"></textarea>
+    <div class="message" *ngIf="contactForm.get('message').invalid && isSubmitted">
+      {{languageSwitch | language: 'fieldRequired'}}
+    </div>
+  </div>
+  <button class="send-button" type="submit">{{languageSwitch | language: submessage}}</button>
 </form>

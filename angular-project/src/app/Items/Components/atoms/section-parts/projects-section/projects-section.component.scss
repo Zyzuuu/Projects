@@ -1,5 +1,11 @@
 @import "../../../../../../styles.scss";
 
 .projects-section {
-    @extend %div-size;
+    background: #262a2b;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+

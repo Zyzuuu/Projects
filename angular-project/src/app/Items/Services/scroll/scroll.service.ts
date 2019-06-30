@@ -61,17 +61,17 @@ export class ScrollService implements OnInit {
     if (scrolledPercentage < 90) {
       this.SetActiveLink(navLinkArray.navLinks[4].name);
     }
-    if (scrolledPercentage > 90 && scrolledPercentage < 150) {
-      this.SetActiveLink(navLinkArray.navLinks[0].name);
-    }
-    if (scrolledPercentage > 204 && scrolledPercentage < 250) {
-      this.SetActiveLink(navLinkArray.navLinks[1].name);
-    }
-    if (scrolledPercentage >= 305 && scrolledPercentage < 350) {
-      this.SetActiveLink(navLinkArray.navLinks[2].name);
-    }
-    if (scrolledPercentage > 399) {
-      this.SetActiveLink(navLinkArray.navLinks[3].name);
-    }
+    // if (scrolledPercentage > 90 && scrolledPercentage < 150) {
+    //   this.SetActiveLink(navLinkArray.navLinks[0].name);
+    // }
+    // if (scrolledPercentage > 204 && scrolledPercentage < 250) {
+    //   this.SetActiveLink(navLinkArray.navLinks[1].name);
+    // }
+    // if (scrolledPercentage >= 305 && scrolledPercentage < 350) {
+    //   this.SetActiveLink(navLinkArray.navLinks[2].name);
+    // }
+    // if (scrolledPercentage > 399) {
+    //   this.SetActiveLink(navLinkArray.navLinks[3].name);
+    // }
   }
 }

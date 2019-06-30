@@ -1,6 +1,6 @@
 export interface ContactFormModel {
-    subject: string;
+    topic: string;
     name: string;
-    mail: string;
+    email: string;
     message: string;
 }

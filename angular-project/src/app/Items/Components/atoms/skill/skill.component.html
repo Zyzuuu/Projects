@@ -1,0 +1,19 @@
+<div *ngIf="desktop; then desk; else mobile"></div>
+
+<ng-template #desk>
+  <ng-container *ngFor="let item of skillArray">
+    <div [ngStyle]="{'top': item.top, 'left': item.left, 'width': item.width, 'height': item.height,
+  'background': item.background}" class="wrapper tooltip">
+      <p>{{item.name}}</p>
+      <span class="tooltiptext">{{item.tooltip}}</span>
+    </div>
+  </ng-container>
+</ng-template>
+
+<ng-template #mobile>
+  <ng-container *ngFor="let item of skillArray; let i = index">
+    <div class="mobile-skill {{item.selector}}">
+      <p>{{item.name}}</p>
+    </div>
+  </ng-container>
+</ng-template>

@@ -3,14 +3,15 @@
 
 <ng-template #normal>
   <ul *ngFor="let item of navigateTo; let i = index" class="inline">
-    <li *ngIf="i < 4"><a [class.active]="IsActive(item.name)" (click)="SetActive(item.name);Scroll(item.anchor)"
-        [href]="item.href">{{langText | language: item.name}}</a></li>
+    <li *ngIf="i < 4"><a appCloudsChange [class.active]="IsActive(item.name)"
+        (click)="SetActive(item.name);Scroll(item.anchor)" [href]="item.href">{{langText | language: item.name}}</a>
+    </li>
   </ul>
 </ng-template>
 <ng-template #mobile>
 
   <ng-container *ngFor="let item of navigateTo; let i = index">
-    <a *ngIf="i < 4" class="square" [class.active]="IsActive(item.name)"
+    <a appCloudsChange *ngIf="i < 4" class="square" [class.active]="IsActive(item.name)"
       (click)="SetActive(item.name);Scroll(item.anchor)" [href]="item.href">{{langText | language: item.name}}</a>
   </ng-container>
   <p class="square">

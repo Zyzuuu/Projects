@@ -1,11 +1,7 @@
-img {
-    width: 150px;
-    height: 150px;
+.options {
+    outline: none;
     border-radius: 50%;
-    border: 2px dotted black;
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-filter: grayscale(50%);
-    filter: grayscale(50%);
 }

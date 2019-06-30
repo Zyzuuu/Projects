@@ -1,3 +1,11 @@
 <div #skills class="skills-section">
-  skills-section works!
+  <div class="triangle"></div>
+  <div class="skills-container">
+    <div class="center">
+      <app-skills [desktop]="true"></app-skills>
+    </div>
+  </div>
+  <div class="skills-mobile-container">
+    <app-skills [desktop]="false"></app-skills>
+  </div>
 </div>

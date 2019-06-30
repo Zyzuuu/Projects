@@ -1,7 +1,8 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TimeLine } from 'app/Items/Models/array-models/timeline';
 import { LanguageService } from 'app/Items/Services/language-service/language.service';
 import * as timelineArray from 'app/Items/Models/arrays/timeline-array';
+import { ChangeAvatarService } from 'app/Items/Services/avatar-type-change/change-avatar.service';
 
 @Component({
   selector: 'app-timeline',
@@ -12,15 +13,16 @@ export class TimelineComponent implements OnInit {
 
   @Input() timeline: TimeLine[];
   public langSwitch: string;
-  constructor(private language: LanguageService) { }
+  constructor(private language: LanguageService, private avatar: ChangeAvatarService) { }
 
   ngOnInit(): void {
     timelineArray.timeline[0].pulse = '';
     this.language.lang.subscribe(language => this.langSwitch = language);
   }
 
-  ShowDetails(anchor) {
+  ShowDetails(anchor, type) {
     this.language.SetCompanyName(anchor);
+    this.avatar.SetAvatarType(type);
   }
 
   CheckType(anchor: string, compare: string, active: string, i: number): void {

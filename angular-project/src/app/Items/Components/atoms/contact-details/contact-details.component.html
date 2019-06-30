@@ -1,0 +1,23 @@
+<div *ngIf="linked; then withLink; else woLink">
+
+</div>
+
+<ng-template #woLink>
+  <div class="more-details">
+    <div class="one" [ngStyle]="{'background': backgroundOne}">{{text}}</div>
+    <div [ngStyle]="{'background': background}" class="two">
+      <img [src]="src">
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #withLink>
+  <a [href]="link" target="_blank">
+    <div class="more-details" [ngStyle]="{'cursor': cursor}">
+      <div class="one" [ngStyle]="{'background': backgroundOne}">{{text}}</div>
+      <div [ngStyle]="{'background': background}" class="two">
+        <img [src]="src">
+      </div>
+    </div>
+  </a>
+</ng-template>
