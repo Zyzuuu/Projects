@@ -48,8 +48,8 @@ async function main(subject, mail, name, message) {
     await transporter.sendMail({
         from: '"Recrutation from site" <przemek.szymczuk@gmail.com>',
         to: `przemek.szymczuk@gmail.com`,
-        subject: `${subject}`,
-        text: null,
+        subject: `${subject}`, // Subject line
+        text: null, // plain text body
         html:
             `
     <div style="width: 100%; height: 100%">

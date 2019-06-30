@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { MatDialog } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-project';
+
+  constructor(private dialogRef: MatDialog) { }
+
+  @HostListener('window:resize')
+  onWindowResize(): void {
+    if (window.innerWidth > 1023) {
+      this.dialogRef.closeAll();
+    }
+  }
+
 }

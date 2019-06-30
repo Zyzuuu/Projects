@@ -1,5 +1,15 @@
 <div class="close" (click)="Close()">X</div>
 <div class="wrapper">
   <app-title-header [dictionary]="'moreDialogTitle'" [case]="'uppercase'"></app-title-header>
-  <app-addidional-contact></app-addidional-contact>
+  <app-contact-details [background]="'#333'" [text]="'577-561-994'" [src]="'assets/icons/phone-receiver.png'">
+  </app-contact-details>
+  <app-contact-details [background]="'#12A5F4'" [cursor]="'pointer'" [text]="'Zyzuuuu'"
+    [src]="'assets/icons/skype-symbol.png'">
+  </app-contact-details>
+  <app-contact-details [background]="'#c71610'" [text]="'przemek.szymczuk@gmail.com'"
+    [src]="'assets/icons/email-envelope.png'">
+  </app-contact-details>
+  <app-contact-details [background]="'#6e5494'" [text]="'Zyzuuu'" [linked]="true"
+    [link]="'http://www.github.com/Zyzuuu'" [src]="'assets/icons/github.png'">
+  </app-contact-details>
 </div>
