@@ -40,8 +40,8 @@ async function main(subject, mail, name, message) {
         port: 587,
         secure: false,
         auth: {
-            user: 'przemek.szymczuk@gmail.com',
-            pass: 'apokalipsa123'
+            user: '***',
+            pass: '***'
         }
     });
 
