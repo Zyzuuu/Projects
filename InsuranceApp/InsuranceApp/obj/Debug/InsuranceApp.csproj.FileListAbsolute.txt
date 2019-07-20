@@ -14,3 +14,18 @@ C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.cspr
 C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csproj.CoreCompileInputs.cache
 C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.exe
 C:\Users\zyzu\source\repos\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.pdb
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe.config
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.exe
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\bin\Debug\InsuranceApp.pdb
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\MainWindow.g.cs
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\App.g.cs
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp_MarkupCompile.cache
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp_MarkupCompile.lref
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\App.baml
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\MainWindow.baml
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.g.resources
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.Properties.Resources.resources
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csproj.GenerateResource.cache
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.csproj.CoreCompileInputs.cache
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.exe
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\InsuranceApp\InsuranceApp\obj\Debug\InsuranceApp.pdb

@@ -5,3 +5,10 @@ C:\Users\zyzu\source\repos\Pesel\Pesel\obj\Debug\Pesel.csproj.CoreCompileInputs.
 C:\Users\zyzu\source\repos\Pesel\Pesel\obj\Debug\Pesel.exe
 C:\Users\zyzu\source\repos\Pesel\Pesel\obj\Debug\Pesel.pdb
 C:\Users\zyzu\source\repos\Pesel\Pesel\obj\Debug\Pesel.csprojResolveAssemblyReference.cache
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\bin\Debug\Pesel.exe.config
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\bin\Debug\Pesel.exe
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\bin\Debug\Pesel.pdb
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\obj\Debug\Pesel.csprojAssemblyReference.cache
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\obj\Debug\Pesel.csproj.CoreCompileInputs.cache
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\obj\Debug\Pesel.exe
+C:\Users\przem\OneDrive\Desktop\Git repository\My-projects\Pesel\Pesel\obj\Debug\Pesel.pdb
